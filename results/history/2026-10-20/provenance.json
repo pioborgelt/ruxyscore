@@ -1,0 +1,588 @@
+{
+  "schema": "ruxyscore-doc-provenance/1",
+  "prepared_on": "2026-10-21",
+  "source_host_role": "Existing private SSH research artifacts; metadata and file I/O only during preparation",
+  "documents_source_records": [
+    {
+      "path": "panel/README.md",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "README.md",
+      "bytes": 6999,
+      "sha256": "0f0101304a1a43dcd0ee00882d2d24c504cb2ea27c13fe9e09d2fe49d41dfa6b"
+    },
+    {
+      "path": "panel/RESULTS.md",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "RESULTS.md",
+      "bytes": 6376,
+      "sha256": "7b990a914a6e6b6193a5e886ff12bd2665bc42ac3f69273124fd067dc64fa521"
+    },
+    {
+      "path": "panel/PANEL_ID.json",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "PANEL_ID.json",
+      "bytes": 287,
+      "sha256": "a33a801b39e7168163f7b9d097dff688ca27687c1cfb293b74c1a40648f58859"
+    },
+    {
+      "path": "panel/PANEL_REGISTRATION.json",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "PANEL_REGISTRATION.json",
+      "bytes": 188887,
+      "sha256": "2644d325ee5e41392473d35bdf625b275daf4a08eb08d419fffa999e8b8fe99d"
+    },
+    {
+      "path": "panel/TARGET_REGISTRY.json",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "TARGET_REGISTRY.json",
+      "bytes": 5771,
+      "sha256": "335c5d4504818db33dd1909d11e9d6679bc5ae3d6ccd71649a58227c123282d2"
+    },
+    {
+      "path": "panel/CODE_FREEZE_BEFORE_TARGET.json",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "CODE_FREEZE_BEFORE_TARGET.json",
+      "bytes": 6592,
+      "sha256": "4d38d7a8770aea431a8040031c80e62c6b89faf08354b149f99525724c304111"
+    },
+    {
+      "path": "panel/OFFICIAL_REVIEW_2026_10_20.md",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "OFFICIAL_REVIEW_2026_10_20.md",
+      "bytes": 2636,
+      "sha256": "ac35e5f5ef39bfb9f61cff2cd09d8c31cd8b2cf440469f661cf2648d90d3de35"
+    },
+    {
+      "path": "panel/TOKENIZER_QA.json",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "TOKENIZER_QA.json",
+      "bytes": 955,
+      "sha256": "7f0c9fa397838ae800e2dd41d1dd10c780868d745014bc943759d734c4d6c201"
+    },
+    {
+      "path": "panel/PACKAGE_VERIFICATION.json",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "PACKAGE_VERIFICATION.json",
+      "bytes": 310,
+      "sha256": "4c7529cdedcaf185379f125eadb7d0c834b66f3eed9708547f909a1b6588737a"
+    },
+    {
+      "path": "panel/COMPLETION_AUDIT.json",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "COMPLETION_AUDIT.json",
+      "bytes": 4838,
+      "sha256": "c9a3d420af34ebcf6f2feeddc56336251c03d563b0d28a7ef436843173dce3dc"
+    },
+    {
+      "path": "panel/verified/work/olmo2_7b_instruct_bf16/PANEL_REPORT.json",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "verified/work/olmo2_7b_instruct_bf16/PANEL_REPORT.json",
+      "bytes": 741609,
+      "sha256": "c79471842991cee4887a40f99022c3119585709a9fc142d7ce3e567b67b6ae65"
+    },
+    {
+      "path": "panel/verified/work/olmo2_7b_instruct_bf16/PANEL_RUN_FREEZE.json",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "verified/work/olmo2_7b_instruct_bf16/PANEL_RUN_FREEZE.json",
+      "bytes": 6553,
+      "sha256": "d7a8897c1a61ca1e523cf73f5828360688d6176242fbaf3baa632c56693ed70c"
+    },
+    {
+      "path": "panel/verified/work/olmo2_7b_instruct_bf16/EXPLORER.html",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "verified/work/olmo2_7b_instruct_bf16/EXPLORER.html",
+      "bytes": 468980,
+      "sha256": "17d6b001b6c3ca6730393dd3d8d59a3509a1a8c214bced8aebd9f01535d247dc"
+    },
+    {
+      "path": "panel/verified/work/olmo2_7b_instruct_bf16/RUNTIME.json",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "verified/work/olmo2_7b_instruct_bf16/RUNTIME.json",
+      "bytes": 1493,
+      "sha256": "9c823716ff1e3624cac8e05dc22cf9cb96c0809eaa58ee1ce5eb8c2ae1f03e86"
+    },
+    {
+      "path": "panel/verified/EXECUTION_PROOF.json",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "verified/EXECUTION_PROOF.json",
+      "bytes": 631,
+      "sha256": "d405cc479c0b36b122c1cf331253d02145e234c7d4dd036be91e7432ae3bd168"
+    },
+    {
+      "path": "panel/verified/REVIEW_EXIT.json",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "verified/REVIEW_EXIT.json",
+      "bytes": 244,
+      "sha256": "e038ab28d28d4c21398f560a2e96e0de3fab08b787b9c7f46b108f3d309988da"
+    },
+    {
+      "path": "panel/verified/TESTS.log",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "verified/TESTS.log",
+      "bytes": 6875,
+      "sha256": "e043a273301cd809671e0d28f7bf5f9daca67f2915833f3f607d1c2fd205cb0a"
+    },
+    {
+      "path": "panel/package/NOTICE.md",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/NOTICE.md",
+      "bytes": 2195,
+      "sha256": "3018f2243b7bb7e6db8b3b9a347ede23a0f42ba3f12a798a7637929ea55b0f97"
+    },
+    {
+      "path": "panel/package/NOTICE_ONBOARDING.txt",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/NOTICE_ONBOARDING.txt",
+      "bytes": 207,
+      "sha256": "b9f27915836719d27785793f66abaa85208927e1d578637b9d4b2238b72d5e61"
+    },
+    {
+      "path": "panel/package/README.md",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/README.md",
+      "bytes": 9282,
+      "sha256": "14f7b215b5f4b60a23ea6ea7b8aea7c91bc5514ba8f70d884917a80a2c9ea8c4"
+    },
+    {
+      "path": "panel/package/pyproject.toml",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/pyproject.toml",
+      "bytes": 711,
+      "sha256": "461796c4f0b35d3ec6dc53ef33e0886f12c169d4b41685adc48e9ae7807e9009"
+    },
+    {
+      "path": "panel/package/ruxybench/ner.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/ner.py",
+      "bytes": 4660,
+      "sha256": "04547994b07bf84c2c9395db002033773baf72c721b204505aa8432b1f07d426"
+    },
+    {
+      "path": "panel/package/ruxybench/bank.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/bank.py",
+      "bytes": 10995,
+      "sha256": "f7469a2b20d2a9d3541edec643275b33cd07b00a1df80e6d3b51621cd1733b94"
+    },
+    {
+      "path": "panel/package/ruxybench/report.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/report.py",
+      "bytes": 10947,
+      "sha256": "25a550663d13153ac031ee600b4f753934888367e071fd71114da306d1173c96"
+    },
+    {
+      "path": "panel/package/ruxybench/metrics.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/metrics.py",
+      "bytes": 2285,
+      "sha256": "a3d795e6a5d26149f0e40f259f638cd17393b1a0e5951f337413897b7e12bf38"
+    },
+    {
+      "path": "panel/package/ruxybench/__init__.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/__init__.py",
+      "bytes": 30,
+      "sha256": "dd4c0bdabacde8644ca0ea833a69cd1a3951d0b440d126747013a9d034229da5"
+    },
+    {
+      "path": "panel/package/ruxybench/precision_compare.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/precision_compare.py",
+      "bytes": 2710,
+      "sha256": "e2fb787be96075224a84db90711ae63f07298ffa62275af1e244f38910c7a661"
+    },
+    {
+      "path": "panel/package/ruxybench/probes.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/probes.py",
+      "bytes": 8312,
+      "sha256": "e3c3d0daafc84705e24d90b14ca9233219ef92bc0581f3fe4577183eb7f80a32"
+    },
+    {
+      "path": "panel/package/ruxybench/panel_report.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/panel_report.py",
+      "bytes": 8161,
+      "sha256": "04eb9cbdab13f51acdb76b0cb70a825fd4e564c772f7a230124799ef79eaf48e"
+    },
+    {
+      "path": "panel/package/ruxybench/controls.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/controls.py",
+      "bytes": 3136,
+      "sha256": "310978ff9f4da07048d92e97808dc852ba9ac8dec7cacb7bcf2738a1d32431b2"
+    },
+    {
+      "path": "panel/package/ruxybench/onboarding_spec.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/onboarding_spec.py",
+      "bytes": 545,
+      "sha256": "d4750cdf28e908e01b8e0970fb9aa3efb210772b8ab5e62cac9cee11266434f6"
+    },
+    {
+      "path": "panel/package/ruxybench/sourcepack.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/sourcepack.py",
+      "bytes": 2261,
+      "sha256": "22bf18dacb37f87dda92bdb2bfa98db2adbddfcb03d5884ae6e6c3afad94292c"
+    },
+    {
+      "path": "panel/package/ruxybench/readout.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/readout.py",
+      "bytes": 3351,
+      "sha256": "1c6735912fd43f9a3ba89ffa39307030eaf89563b177510e2b92bb172479e9ec"
+    },
+    {
+      "path": "panel/package/ruxybench/text_controls.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/text_controls.py",
+      "bytes": 4262,
+      "sha256": "4aef2bc49a4a33303534ee3ad3526f4332cdd603456c35df69c5a5b2ecac79a1"
+    },
+    {
+      "path": "panel/package/ruxybench/precision_provider.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/precision_provider.py",
+      "bytes": 19476,
+      "sha256": "efdd80bb19b022febd515606c5a04a6af32ff4bbc5b7af34c877d2bd5ec2f3c6"
+    },
+    {
+      "path": "panel/package/ruxybench/__main__.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/__main__.py",
+      "bytes": 9530,
+      "sha256": "3d8922f9fcf4e29eb4bd64855cf9308f93d4649d07d38b086062fef745914a7c"
+    },
+    {
+      "path": "panel/package/ruxybench/panel.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/panel.py",
+      "bytes": 16409,
+      "sha256": "e5b767e98d0c6eb7faff4beb1b4e97dd9ab557c3bd93be09ad755f9e783f93f4"
+    },
+    {
+      "path": "panel/package/ruxybench/matrix.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/matrix.py",
+      "bytes": 16243,
+      "sha256": "20b5315055cc527746018dc205418ad0ae550fc4f2611a6a886a4ee92caefbb9"
+    },
+    {
+      "path": "panel/package/ruxybench/legacy_metrics.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/legacy_metrics.py",
+      "bytes": 6046,
+      "sha256": "2014c32c558b6120c0ab1d5e768f9662cccbc68ef356f6e8312ec6333a51f3a2"
+    },
+    {
+      "path": "panel/package/ruxybench/matrix_report.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/matrix_report.py",
+      "bytes": 17743,
+      "sha256": "cd5ada74f579a0a195befbedf957718cbfef740b67369f08b4176faa6fd207c7"
+    },
+    {
+      "path": "panel/package/ruxybench/matrix_cache.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/matrix_cache.py",
+      "bytes": 4920,
+      "sha256": "db9b2d2846a29bd75d3a796df08741e7060dcf2e6bd68383bc29df644c85eb4e"
+    },
+    {
+      "path": "panel/package/ruxybench/scorecard.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/scorecard.py",
+      "bytes": 22061,
+      "sha256": "08c52243a058c2e187e07fb4b0122cd018966c8c3c193aed1fccbe6cc05b1b2b"
+    },
+    {
+      "path": "panel/package/ruxybench/uncertainty.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/uncertainty.py",
+      "bytes": 5415,
+      "sha256": "944eaeca44b927ca3745acf63c96892c0cecd00ae42c145b4a8fa4cb0f3106b2"
+    },
+    {
+      "path": "panel/package/ruxybench/contracts.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/contracts.py",
+      "bytes": 3423,
+      "sha256": "1b16973f9b02e22e2e20d43e695e23779771e41ea08dafc3ff43bd9df0d96e08"
+    },
+    {
+      "path": "panel/package/ruxybench/spec.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/spec.py",
+      "bytes": 2001,
+      "sha256": "df80c21649884a92469d34625488ef553cd7f64b2e2e76c011b0beb8b5b863c1"
+    },
+    {
+      "path": "panel/package/ruxybench/pipeline.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/pipeline.py",
+      "bytes": 19955,
+      "sha256": "2eb6a31a3ffd28fbd42e22349516466a94b3eeb2e75c3462d509f5570b0fdc2e"
+    },
+    {
+      "path": "panel/package/ruxybench/matrix_plan.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/matrix_plan.py",
+      "bytes": 3076,
+      "sha256": "c95740b10b9edd0197a5a4ad606d1e8ecea42b795ecfd3fcfcbe7b9019bf9053"
+    },
+    {
+      "path": "panel/package/ruxybench/onboarding.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/onboarding.py",
+      "bytes": 8469,
+      "sha256": "c0fccd4762f908b7c80333f0344ea83ffbc9388e856b29fb2dfd2f265bef0cb7"
+    },
+    {
+      "path": "panel/package/ruxybench/provider.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/provider.py",
+      "bytes": 149,
+      "sha256": "625a8f93f5721dd72e4d2814ec13d2461dcaa09ccfeaf890deafdef1b9d94f9f"
+    },
+    {
+      "path": "panel/package/ruxybench/io.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/io.py",
+      "bytes": 5020,
+      "sha256": "adc141ad02193ea0ce817a374f149b4028f6422eb3536db2f14689c10765940b"
+    },
+    {
+      "path": "panel/package/ruxybench/provider_bf16_original.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/ruxybench/provider_bf16_original.py",
+      "bytes": 10632,
+      "sha256": "132d9c901c27c6f3cc009827f38903d30930f7f7cb5cabb465742a17feeb2047"
+    },
+    {
+      "path": "panel/package/tests/test_pipeline.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/tests/test_pipeline.py",
+      "bytes": 5260,
+      "sha256": "1848e583e7c18bf7f48385fb690acd3ec1a6d2dcf00b550acb2ff78600ec182d"
+    },
+    {
+      "path": "panel/package/tests/test_matrix.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/tests/test_matrix.py",
+      "bytes": 7747,
+      "sha256": "7b04161bff5e462b8a1910a2bbd7f1628f6bbaab17deeb5bc45e45b6e2f075ba"
+    },
+    {
+      "path": "panel/package/tests/test_core.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/tests/test_core.py",
+      "bytes": 7371,
+      "sha256": "7412614614afab57241d1dffbc0895cd0bc8effb5ad6a28780e40becce52fca5"
+    },
+    {
+      "path": "panel/package/tests/test_onboarding.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/tests/test_onboarding.py",
+      "bytes": 5502,
+      "sha256": "7c76a5351debb635deab276bb7f0a93e503b46e1126de23a53a271618f4a6aed"
+    },
+    {
+      "path": "panel/package/tests/test_panel.py",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "package/tests/test_panel.py",
+      "bytes": 3929,
+      "sha256": "98353a9b1d78985fcb89853e373b69f4a537eff23a4f9a6a9a1eb972346614be"
+    },
+    {
+      "path": "panel/bank/BANK_FREEZE.json",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "bank/BANK_FREEZE.json",
+      "bytes": 3615,
+      "sha256": "82cb37680f88e94696a8e3a637f998a065bf462ee79246d37002cad4e1824fd3"
+    },
+    {
+      "path": "panel/bank/subject_routing.json",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "bank/subject_routing.json",
+      "bytes": 352027,
+      "sha256": "ef6e35f326019079f7158a13717089e299666a25a0fca7413faeaaa3d4610963"
+    },
+    {
+      "path": "panel/bank/sentiment.json",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "bank/sentiment.json",
+      "bytes": 286275,
+      "sha256": "08286d1150bdb0df1d28eba17082ebe5aa610036e3096db3dd0bf222c2ce2894"
+    },
+    {
+      "path": "panel/bank/entity_boundary.json",
+      "source_branch": "fixed_reference_panel_nonqwen_2026_10_20",
+      "source_relative_path": "bank/entity_boundary.json",
+      "bytes": 431351,
+      "sha256": "a51c32a573fe4fff5a42816375be353d697dfe98db4282d29fdaaeddbe9d2eb2"
+    },
+    {
+      "path": "matrix/README.md",
+      "source_branch": "directed_transfer_matrix_2026_10_20",
+      "source_relative_path": "README.md",
+      "bytes": 8640,
+      "sha256": "1e3b19401d01cbce7181e8d6be9ae99de53ce3251c9660d57bf2aadde89633d4"
+    },
+    {
+      "path": "matrix/PLAN.md",
+      "source_branch": "directed_transfer_matrix_2026_10_20",
+      "source_relative_path": "PLAN.md",
+      "bytes": 6365,
+      "sha256": "e7cbf4f181ec5af01b3b44307c2475fa0c0490b496fd366d75b906262098900b"
+    },
+    {
+      "path": "matrix/RESULTS.md",
+      "source_branch": "directed_transfer_matrix_2026_10_20",
+      "source_relative_path": "RESULTS.md",
+      "bytes": 2395,
+      "sha256": "f47b86268c02062f59f8082e2bc622fd4252c8ba14807b4179865f173c498d3f"
+    },
+    {
+      "path": "matrix/PROTOCOL_FREEZE.json",
+      "source_branch": "directed_transfer_matrix_2026_10_20",
+      "source_relative_path": "PROTOCOL_FREEZE.json",
+      "bytes": 2040,
+      "sha256": "3dcf9aa10ae67b9afd92c265e0e5d10815d373cac51759284aa7a681465a8ef5"
+    },
+    {
+      "path": "matrix/MATRIX_CONFIG.json",
+      "source_branch": "directed_transfer_matrix_2026_10_20",
+      "source_relative_path": "MATRIX_CONFIG.json",
+      "bytes": 146543,
+      "sha256": "1e7cdbfab2b9182dd40e40a815fc36363a95d31660de920bb34fa9de221c9752"
+    },
+    {
+      "path": "matrix/REFERENCE_SOURCE_POOL.json",
+      "source_branch": "directed_transfer_matrix_2026_10_20",
+      "source_relative_path": "REFERENCE_SOURCE_POOL.json",
+      "bytes": 5878,
+      "sha256": "29bebbd59e586d52b282c0cfef98dfe6e78e54ee2918141aebcf5a196afb083a"
+    },
+    {
+      "path": "matrix/reports/MATRIX.json",
+      "source_branch": "directed_transfer_matrix_2026_10_20",
+      "source_relative_path": "reports/MATRIX.json",
+      "bytes": 11684669,
+      "sha256": "f8b4960030491f449abadfebda4d26ebdd02dfc3a70dbf4c71fb0d76a94f6113"
+    },
+    {
+      "path": "matrix/reports/RESULTS.md",
+      "source_branch": "directed_transfer_matrix_2026_10_20",
+      "source_relative_path": "reports/RESULTS.md",
+      "bytes": 2801,
+      "sha256": "b1c0b10438a8a10ebc3c8c6f23e862a52831c16eb3d897b918d258028c53c26d"
+    },
+    {
+      "path": "matrix/reports/EXPLORER.html",
+      "source_branch": "directed_transfer_matrix_2026_10_20",
+      "source_relative_path": "reports/EXPLORER.html",
+      "bytes": 7013960,
+      "sha256": "0e63b82c7215c6690f96b321d86fc2888b7240408203b575c8434dfa379777d5"
+    },
+    {
+      "path": "v3/README.md",
+      "source_branch": "profile_v3_support_exclusion_2026_10_20",
+      "source_relative_path": "README.md",
+      "bytes": 4276,
+      "sha256": "058e53713bf867a23b798469cd1e1bdf2506bde48dcf1afd12f50b9063bc2d8b"
+    },
+    {
+      "path": "v3/SCORE_CONFIG_V3.json",
+      "source_branch": "profile_v3_support_exclusion_2026_10_20",
+      "source_relative_path": "SCORE_CONFIG_V3.json",
+      "bytes": 1609,
+      "sha256": "c524ad51b1b368a1c49986a0e363746869734192020689632a576d5445f149ad"
+    },
+    {
+      "path": "v3/reports/RESULTS_V3.json",
+      "source_branch": "profile_v3_support_exclusion_2026_10_20",
+      "source_relative_path": "reports/RESULTS_V3.json",
+      "bytes": 5002172,
+      "sha256": "3630ecf0155c38564e8779c3c616e8a3b7e69e45c87fc2976f260b0f829bf7cd"
+    },
+    {
+      "path": "v3/qualification/RESULTS_SOURCE_QUALIFICATION.md",
+      "source_branch": "profile_v3_support_exclusion_2026_10_20",
+      "source_relative_path": "qualification/RESULTS_SOURCE_QUALIFICATION.md",
+      "bytes": 11348,
+      "sha256": "5996b77cf356e05926556ddf4d1bd06a0f051fd75c4cbbe9725f016453c13599"
+    }
+  ],
+  "panel_id": {
+    "panel_id": "qwen-scale-reference-v1-da71e0531312",
+    "canonical_sha256": "da71e05313121aa388373ba54be8f831005d058faab7676dc3d62b385abfafbd",
+    "file": {
+      "bytes": 188887,
+      "sha256": "2644d325ee5e41392473d35bdf625b275daf4a08eb08d419fffa999e8b8fe99d"
+    },
+    "immutable": true
+  },
+  "recorded_execution": {
+    "passed": true,
+    "processes": [
+      {
+        "pid": 1236,
+        "code": 75,
+        "log": "first.log"
+      },
+      {
+        "pid": 1933,
+        "code": 0,
+        "log": "resumed.log"
+      },
+      {
+        "pid": 8001,
+        "code": 0,
+        "log": "completed-replay.log"
+      }
+    ],
+    "replay_counts": {
+      "model_loads": 0,
+      "new_contexts": 0,
+      "reused_contexts": 0,
+      "native_fits": 0,
+      "map_fits": 0
+    },
+    "first_chunk_unchanged": true,
+    "completed_receipt_unchanged": true,
+    "original_counts": {
+      "model_loads": 1,
+      "new_contexts": 8768,
+      "reused_contexts": 128,
+      "native_fits": 6,
+      "map_fits": 36
+    }
+  },
+  "recorded_internal_review": {
+    "code": 0,
+    "passed": true,
+    "independent_ROC_replays": 156,
+    "bootstrap_draws": 500,
+    "paired_aggregation_intervals_verified": true,
+    "explorer_selector_states": 8,
+    "adapter_maps_reviewed": 36,
+    "new_fits": 0,
+    "new_forwards": 0
+  },
+  "recorded_reproduction_kit": {
+    "passed": true,
+    "archive": {
+      "bytes": 319521127,
+      "sha256": "5afe05f958206eb43cf8d79c1c6fbd0813d31fa7113365d7b6def2b924242ac0"
+    },
+    "members": 382,
+    "all_members_full_bytes_verified": true,
+    "no_model_weights": true,
+    "manifest": "PORTABLE_MANIFEST.json",
+    "release_or_publication": false
+  },
+  "no_scientific_recompute_during_doc_preparation": true,
+  "publication": false
+}

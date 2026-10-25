@@ -1,0 +1,1369 @@
+{
+  "version": "mixed-bank-corrected-original-4.1",
+  "profiles": [
+    {
+      "view": "controlled-old",
+      "model": "olmo2_7b_instruct_bf16",
+      "recipe": "ridge",
+      "fraction": 1.0,
+      "calibration": "target_CAL",
+      "source_pool": [
+        "qwen3_8b_bf16",
+        "qwen3_32b_bf16",
+        "qwen25_72b_int8"
+      ],
+      "panel_id": "6da41b6390d4ef9c",
+      "pool_scope": "fixed full Qwen reference",
+      "native_tasks": {
+        "subject_routing": {
+          "point": 82.87259615384616,
+          "test_interval": {
+            "lower": 76.09103136446886,
+            "upper": 90.07733802655677
+          },
+          "training_SD": null,
+          "training_range": null,
+          "training_seeds": 1,
+          "cell_ids": [
+            "c21c4a415dd5fe60951f4030-target_CAL",
+            "7ead34b507cafd7c719de339-target_CAL"
+          ]
+        },
+        "sentiment": {
+          "point": 100.0,
+          "test_interval": {
+            "lower": 100.0,
+            "upper": 100.0
+          },
+          "training_SD": null,
+          "training_range": null,
+          "training_seeds": 1,
+          "cell_ids": [
+            "2dc26708c88446e1c919c5ad-target_CAL",
+            "cb970b22f6610de9d28d7beb-target_CAL"
+          ]
+        },
+        "entity_boundary": {
+          "point": 95.91482964221451,
+          "test_interval": {
+            "lower": 94.45159090384213,
+            "upper": 97.41595167556311
+          },
+          "training_SD": null,
+          "training_range": null,
+          "training_seeds": 1,
+          "cell_ids": [
+            "6c6ce027a4b448bae7e52615-target_CAL",
+            "f18f7d825b3b2942d30db87f-target_CAL"
+          ]
+        }
+      },
+      "native": {
+        "point": 92.33200438998136,
+        "test_interval": {
+          "lower": 89.65556921149026,
+          "upper": 95.3125608743413
+        }
+      },
+      "incoming_tasks": {
+        "subject_routing": {
+          "point": 61.43830128205127,
+          "test_interval": {
+            "lower": 56.88995249542124,
+            "upper": 70.20590086996337
+          }
+        },
+        "sentiment": {
+          "point": 100.0,
+          "test_interval": {
+            "lower": 100.0,
+            "upper": 100.0
+          }
+        },
+        "entity_boundary": {
+          "point": 95.62068733532548,
+          "test_interval": {
+            "lower": 94.15967176555169,
+            "upper": 97.11004032935571
+          }
+        }
+      },
+      "incoming": {
+        "point": 83.69945797988561,
+        "test_interval": {
+          "lower": 81.8408945750126,
+          "upper": 87.069217284832
+        }
+      },
+      "source_task_values": {
+        "subject_routing": {
+          "qwen3_8b_bf16": {
+            "point": 53.42548076923076,
+            "test_interval": {
+              "lower": 45.61834649725275,
+              "upper": 69.05155391483515
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "7c7b172c5452187f6f5903e9-target_CAL",
+              "b0d4b8a3ff866f9a110f5fe4-target_CAL"
+            ]
+          },
+          "qwen3_32b_bf16": {
+            "point": 73.85817307692307,
+            "test_interval": {
+              "lower": 68.44808836996337,
+              "upper": 83.87956444597069
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "2d23ea97b1bd265b11807482-target_CAL",
+              "9fc23c7d11b0ef2a2712a81a-target_CAL"
+            ]
+          },
+          "qwen25_72b_int8": {
+            "point": 57.03125,
+            "test_interval": {
+              "lower": 50.65748054029304,
+              "upper": 63.911901900183146
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "46f303f2c638e3222c96a553-target_CAL",
+              "216f75031a658b3fd85a4d76-target_CAL"
+            ]
+          }
+        },
+        "sentiment": {
+          "qwen3_8b_bf16": {
+            "point": 100.0,
+            "test_interval": {
+              "lower": 100.0,
+              "upper": 100.0
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "76dbed135ff008d7b96e4aa4-target_CAL",
+              "7d8a0047de813020add5c607-target_CAL"
+            ]
+          },
+          "qwen3_32b_bf16": {
+            "point": 100.0,
+            "test_interval": {
+              "lower": 100.0,
+              "upper": 100.0
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "296cf6115004ee800f0a8ca2-target_CAL",
+              "47409911fe7dc168b19f39e6-target_CAL"
+            ]
+          },
+          "qwen25_72b_int8": {
+            "point": 100.0,
+            "test_interval": {
+              "lower": 100.0,
+              "upper": 100.0
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "000bda162f3dd08cc070a818-target_CAL",
+              "a923af81bf231c624ab2ca99-target_CAL"
+            ]
+          }
+        },
+        "entity_boundary": {
+          "qwen3_8b_bf16": {
+            "point": 95.7222282468993,
+            "test_interval": {
+              "lower": 94.18944057358941,
+              "upper": 97.0313576283457
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "d6c1bf470f31fadaa2d0c8ce-target_CAL",
+              "88e7062f759f678e8edef3e0-target_CAL"
+            ]
+          },
+          "qwen3_32b_bf16": {
+            "point": 94.81877771351455,
+            "test_interval": {
+              "lower": 93.01142479596426,
+              "upper": 96.52295332933696
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "496c2ec2ba35cb285c47073c-target_CAL",
+              "da5aa306f3697c5999700710-target_CAL"
+            ]
+          },
+          "qwen25_72b_int8": {
+            "point": 96.32105604556261,
+            "test_interval": {
+              "lower": 94.73147010153589,
+              "upper": 97.76421723378961
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "2c88b044ceb6a9ecc48443b8-target_CAL",
+              "f5c9ee1a460184dbb8316dff-target_CAL"
+            ]
+          }
+        }
+      },
+      "composite": {
+        "point": 88.01573118493349,
+        "test_interval": {
+          "lower": 86.34415869484744,
+          "upper": 90.74836331697968
+        }
+      },
+      "complete": true,
+      "reason": null,
+      "training_uncertainty": "No full-benchmark training CI; natural five-resample spread per task only"
+    },
+    {
+      "view": "controlled-numeric-only",
+      "model": "olmo2_7b_instruct_bf16",
+      "recipe": "ridge",
+      "fraction": 1.0,
+      "calibration": "target_CAL",
+      "source_pool": [
+        "qwen3_8b_bf16",
+        "qwen3_32b_bf16",
+        "qwen25_72b_int8"
+      ],
+      "panel_id": "6730d19bb74ff76c",
+      "pool_scope": "fixed full Qwen reference",
+      "native_tasks": {
+        "subject_routing": {
+          "point": 82.87259615384616,
+          "test_interval": {
+            "lower": 76.09103136446886,
+            "upper": 90.07733802655677
+          },
+          "training_SD": null,
+          "training_range": null,
+          "training_seeds": 1,
+          "cell_ids": [
+            "c21c4a415dd5fe60951f4030-target_CAL",
+            "7ead34b507cafd7c719de339-target_CAL"
+          ]
+        },
+        "sentiment": {
+          "point": 100.0,
+          "test_interval": {
+            "lower": 100.0,
+            "upper": 100.0
+          },
+          "training_SD": null,
+          "training_range": null,
+          "training_seeds": 1,
+          "cell_ids": [
+            "2dc26708c88446e1c919c5ad-target_CAL",
+            "cb970b22f6610de9d28d7beb-target_CAL"
+          ]
+        },
+        "entity_boundary": {
+          "point": 95.91482964221451,
+          "test_interval": {
+            "lower": 94.45159090384215,
+            "upper": 97.41595167556311
+          },
+          "training_SD": null,
+          "training_range": null,
+          "training_seeds": 1,
+          "cell_ids": [
+            "6c6ce027a4b448bae7e52615-target_CAL",
+            "f18f7d825b3b2942d30db87f-target_CAL"
+          ]
+        }
+      },
+      "native": {
+        "point": 92.33200438998136,
+        "test_interval": {
+          "lower": 89.65556921149026,
+          "upper": 95.3125608743413
+        }
+      },
+      "incoming_tasks": {
+        "subject_routing": {
+          "point": 61.43830128205127,
+          "test_interval": {
+            "lower": 56.88995249542124,
+            "upper": 70.20590086996337
+          }
+        },
+        "sentiment": {
+          "point": 100.0,
+          "test_interval": {
+            "lower": 100.0,
+            "upper": 100.0
+          }
+        },
+        "entity_boundary": {
+          "point": 95.62068733532548,
+          "test_interval": {
+            "lower": 94.1596717655517,
+            "upper": 97.11004032935571
+          }
+        }
+      },
+      "incoming": {
+        "point": 83.69945797988561,
+        "test_interval": {
+          "lower": 81.8408945750126,
+          "upper": 87.069217284832
+        }
+      },
+      "source_task_values": {
+        "subject_routing": {
+          "qwen3_8b_bf16": {
+            "point": 53.42548076923076,
+            "test_interval": {
+              "lower": 45.61834649725275,
+              "upper": 69.05155391483515
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "7c7b172c5452187f6f5903e9-target_CAL",
+              "b0d4b8a3ff866f9a110f5fe4-target_CAL"
+            ]
+          },
+          "qwen3_32b_bf16": {
+            "point": 73.85817307692307,
+            "test_interval": {
+              "lower": 68.44808836996337,
+              "upper": 83.87956444597069
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "2d23ea97b1bd265b11807482-target_CAL",
+              "9fc23c7d11b0ef2a2712a81a-target_CAL"
+            ]
+          },
+          "qwen25_72b_int8": {
+            "point": 57.03125,
+            "test_interval": {
+              "lower": 50.65748054029304,
+              "upper": 63.911901900183146
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "46f303f2c638e3222c96a553-target_CAL",
+              "216f75031a658b3fd85a4d76-target_CAL"
+            ]
+          }
+        },
+        "sentiment": {
+          "qwen3_8b_bf16": {
+            "point": 100.0,
+            "test_interval": {
+              "lower": 100.0,
+              "upper": 100.0
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "76dbed135ff008d7b96e4aa4-target_CAL",
+              "7d8a0047de813020add5c607-target_CAL"
+            ]
+          },
+          "qwen3_32b_bf16": {
+            "point": 100.0,
+            "test_interval": {
+              "lower": 100.0,
+              "upper": 100.0
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "296cf6115004ee800f0a8ca2-target_CAL",
+              "47409911fe7dc168b19f39e6-target_CAL"
+            ]
+          },
+          "qwen25_72b_int8": {
+            "point": 100.0,
+            "test_interval": {
+              "lower": 100.0,
+              "upper": 100.0
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "000bda162f3dd08cc070a818-target_CAL",
+              "a923af81bf231c624ab2ca99-target_CAL"
+            ]
+          }
+        },
+        "entity_boundary": {
+          "qwen3_8b_bf16": {
+            "point": 95.7222282468993,
+            "test_interval": {
+              "lower": 94.18944057358941,
+              "upper": 97.0313576283457
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "d6c1bf470f31fadaa2d0c8ce-target_CAL",
+              "88e7062f759f678e8edef3e0-target_CAL"
+            ]
+          },
+          "qwen3_32b_bf16": {
+            "point": 94.81877771351455,
+            "test_interval": {
+              "lower": 93.01142479596426,
+              "upper": 96.52295332933697
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "496c2ec2ba35cb285c47073c-target_CAL",
+              "da5aa306f3697c5999700710-target_CAL"
+            ]
+          },
+          "qwen25_72b_int8": {
+            "point": 96.32105604556261,
+            "test_interval": {
+              "lower": 94.73147010153589,
+              "upper": 97.76421723378961
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "2c88b044ceb6a9ecc48443b8-target_CAL",
+              "f5c9ee1a460184dbb8316dff-target_CAL"
+            ]
+          }
+        }
+      },
+      "composite": {
+        "point": 88.01573118493349,
+        "test_interval": {
+          "lower": 86.34415869484744,
+          "upper": 90.74836331697968
+        }
+      },
+      "complete": true,
+      "reason": null,
+      "training_uncertainty": "No full-benchmark training CI; natural five-resample spread per task only"
+    },
+    {
+      "view": "controlled-relative-v4",
+      "model": "olmo2_7b_instruct_bf16",
+      "recipe": "ridge",
+      "fraction": 1.0,
+      "calibration": "target_CAL",
+      "source_pool": [
+        "qwen3_8b_bf16",
+        "qwen3_32b_bf16",
+        "qwen25_72b_int8"
+      ],
+      "panel_id": "23b725ca68e26c65",
+      "pool_scope": "fixed full Qwen reference",
+      "native_tasks": {
+        "subject_routing": {
+          "point": 82.90121336996336,
+          "test_interval": {
+            "lower": 76.76782852564102,
+            "upper": 90.48227163461537
+          },
+          "training_SD": null,
+          "training_range": null,
+          "training_seeds": 1,
+          "cell_ids": [
+            "c21c4a415dd5fe60951f4030-target_CAL",
+            "7ead34b507cafd7c719de339-target_CAL"
+          ]
+        },
+        "sentiment": {
+          "point": 100.0,
+          "test_interval": {
+            "lower": 100.0,
+            "upper": 100.0
+          },
+          "training_SD": null,
+          "training_range": null,
+          "training_seeds": 1,
+          "cell_ids": [
+            "2dc26708c88446e1c919c5ad-target_CAL",
+            "cb970b22f6610de9d28d7beb-target_CAL"
+          ]
+        },
+        "entity_boundary": {
+          "point": 95.91482964221451,
+          "test_interval": {
+            "lower": 94.45159090384215,
+            "upper": 97.41595167556311
+          },
+          "training_SD": null,
+          "training_range": null,
+          "training_seeds": 1,
+          "cell_ids": [
+            "6c6ce027a4b448bae7e52615-target_CAL",
+            "f18f7d825b3b2942d30db87f-target_CAL"
+          ]
+        }
+      },
+      "native": {
+        "point": 92.34345127642825,
+        "test_interval": {
+          "lower": 90.00106592854331,
+          "upper": 95.43533218312207
+        }
+      },
+      "incoming_tasks": {
+        "subject_routing": {
+          "point": 61.69108669108669,
+          "test_interval": {
+            "lower": 56.652310363247864,
+            "upper": 70.90416094322343
+          }
+        },
+        "sentiment": {
+          "point": 100.0,
+          "test_interval": {
+            "lower": 100.0,
+            "upper": 100.0
+          }
+        },
+        "entity_boundary": {
+          "point": 95.62068733532548,
+          "test_interval": {
+            "lower": 94.1596717655517,
+            "upper": 97.11004032935571
+          }
+        }
+      },
+      "incoming": {
+        "point": 83.80057214349978,
+        "test_interval": {
+          "lower": 81.77686512287664,
+          "upper": 87.552698770832
+        }
+      },
+      "source_task_values": {
+        "subject_routing": {
+          "qwen3_8b_bf16": {
+            "point": 56.74507783882784,
+            "test_interval": {
+              "lower": 48.52979052197803,
+              "upper": 71.74801110347985
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "7c7b172c5452187f6f5903e9-target_CAL",
+              "b0d4b8a3ff866f9a110f5fe4-target_CAL"
+            ]
+          },
+          "qwen3_32b_bf16": {
+            "point": 73.09981684981685,
+            "test_interval": {
+              "lower": 67.65968406593407,
+              "upper": 83.53508470695971
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "2d23ea97b1bd265b11807482-target_CAL",
+              "9fc23c7d11b0ef2a2712a81a-target_CAL"
+            ]
+          },
+          "qwen25_72b_int8": {
+            "point": 55.22836538461539,
+            "test_interval": {
+              "lower": 48.974072802197796,
+              "upper": 64.4942622481685
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "46f303f2c638e3222c96a553-target_CAL",
+              "216f75031a658b3fd85a4d76-target_CAL"
+            ]
+          }
+        },
+        "sentiment": {
+          "qwen3_8b_bf16": {
+            "point": 100.0,
+            "test_interval": {
+              "lower": 100.0,
+              "upper": 100.0
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "76dbed135ff008d7b96e4aa4-target_CAL",
+              "7d8a0047de813020add5c607-target_CAL"
+            ]
+          },
+          "qwen3_32b_bf16": {
+            "point": 100.0,
+            "test_interval": {
+              "lower": 100.0,
+              "upper": 100.0
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "296cf6115004ee800f0a8ca2-target_CAL",
+              "47409911fe7dc168b19f39e6-target_CAL"
+            ]
+          },
+          "qwen25_72b_int8": {
+            "point": 100.0,
+            "test_interval": {
+              "lower": 100.0,
+              "upper": 100.0
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "000bda162f3dd08cc070a818-target_CAL",
+              "a923af81bf231c624ab2ca99-target_CAL"
+            ]
+          }
+        },
+        "entity_boundary": {
+          "qwen3_8b_bf16": {
+            "point": 95.7222282468993,
+            "test_interval": {
+              "lower": 94.18944057358941,
+              "upper": 97.0313576283457
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "d6c1bf470f31fadaa2d0c8ce-target_CAL",
+              "88e7062f759f678e8edef3e0-target_CAL"
+            ]
+          },
+          "qwen3_32b_bf16": {
+            "point": 94.81877771351455,
+            "test_interval": {
+              "lower": 93.01142479596426,
+              "upper": 96.52295332933697
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "496c2ec2ba35cb285c47073c-target_CAL",
+              "da5aa306f3697c5999700710-target_CAL"
+            ]
+          },
+          "qwen25_72b_int8": {
+            "point": 96.32105604556261,
+            "test_interval": {
+              "lower": 94.73147010153589,
+              "upper": 97.76421723378961
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "2c88b044ceb6a9ecc48443b8-target_CAL",
+              "f5c9ee1a460184dbb8316dff-target_CAL"
+            ]
+          }
+        }
+      },
+      "composite": {
+        "point": 88.07201170996402,
+        "test_interval": {
+          "lower": 86.32424290100586,
+          "upper": 91.09002714702757
+        }
+      },
+      "complete": true,
+      "reason": null,
+      "training_uncertainty": "No full-benchmark training CI; natural five-resample spread per task only"
+    },
+    {
+      "view": "mixed-v4",
+      "model": "olmo2_7b_instruct_bf16",
+      "recipe": "ridge",
+      "fraction": 1.0,
+      "calibration": "target_CAL",
+      "source_pool": [
+        "qwen3_8b_bf16",
+        "qwen3_32b_bf16",
+        "qwen25_72b_int8"
+      ],
+      "panel_id": "ecc1a81640970e0b",
+      "pool_scope": "fixed full Qwen reference",
+      "native_tasks": {
+        "subject_routing": {
+          "point": 82.90121336996336,
+          "test_interval": {
+            "lower": 76.76782852564102,
+            "upper": 90.48227163461537
+          },
+          "training_SD": null,
+          "training_range": null,
+          "training_seeds": 1,
+          "cell_ids": [
+            "c21c4a415dd5fe60951f4030-target_CAL",
+            "7ead34b507cafd7c719de339-target_CAL"
+          ]
+        },
+        "sentiment": {
+          "point": 75.47482221554486,
+          "test_interval": {
+            "lower": 69.57826272035257,
+            "upper": 82.15022942958734
+          },
+          "training_SD": 1.5273817738437327,
+          "training_range": [
+            73.50604717548077,
+            77.36221704727564
+          ],
+          "training_seeds": 5,
+          "cell_ids": [
+            "natural-71be539ad082f76b57d01da3",
+            "natural-c0fc3749938dee3f9a410075",
+            "natural-7e4d89a52dabd71f679bebb5",
+            "natural-fcfa8522c8cefa0e429ed8ef",
+            "natural-d9cbe9aaf5df7307484cfab8",
+            "natural-64451c05331f78b8e4d3bec9",
+            "natural-dfa2615b91da6b4886c12e3a",
+            "natural-94cba48582e47ad031c66a0f",
+            "natural-641bde617a6a26fb7fb094c1",
+            "natural-06b3e04fb1911336dfac1a28",
+            "natural-1997c81c64c1e9dbf8151d4a",
+            "natural-4bc1d9af7d45f14c4bb58ee9",
+            "natural-8f53444df425dd5ffdce68db",
+            "natural-5e9081651a6c05fcdb119fc6",
+            "natural-31fe4383de75fa73ab7efc2c",
+            "natural-bd73322ca625300653204507",
+            "natural-e2fcfd12deb4b7d0591dc1b4",
+            "natural-dd1f1e632c882e67f14f527f",
+            "natural-f03edfde8a5a2d97adf611c3",
+            "natural-afad419cb3a121f2a6b82b49"
+          ]
+        },
+        "entity_boundary": {
+          "point": 95.91482964221451,
+          "test_interval": {
+            "lower": 94.45159090384215,
+            "upper": 97.41595167556311
+          },
+          "training_SD": null,
+          "training_range": null,
+          "training_seeds": 1,
+          "cell_ids": [
+            "6c6ce027a4b448bae7e52615-target_CAL",
+            "f18f7d825b3b2942d30db87f-target_CAL"
+          ]
+        }
+      },
+      "native": {
+        "point": 82.5333801626462,
+        "test_interval": {
+          "lower": 79.39592986936995,
+          "upper": 86.65486854468402
+        }
+      },
+      "incoming_tasks": {
+        "subject_routing": {
+          "point": 61.69108669108669,
+          "test_interval": {
+            "lower": 56.652310363247864,
+            "upper": 70.90416094322343
+          }
+        },
+        "sentiment": {
+          "point": 72.28158804086537,
+          "test_interval": {
+            "lower": 67.22546960553552,
+            "upper": 78.25048202123398
+          }
+        },
+        "entity_boundary": {
+          "point": 95.62068733532548,
+          "test_interval": {
+            "lower": 94.1596717655517,
+            "upper": 97.11004032935571
+          }
+        }
+      },
+      "incoming": {
+        "point": 72.71320735984592,
+        "test_interval": {
+          "lower": 70.12297513584393,
+          "upper": 77.52413739803234
+        }
+      },
+      "source_task_values": {
+        "subject_routing": {
+          "qwen3_8b_bf16": {
+            "point": 56.74507783882784,
+            "test_interval": {
+              "lower": 48.52979052197803,
+              "upper": 71.74801110347985
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "7c7b172c5452187f6f5903e9-target_CAL",
+              "b0d4b8a3ff866f9a110f5fe4-target_CAL"
+            ]
+          },
+          "qwen3_32b_bf16": {
+            "point": 73.09981684981685,
+            "test_interval": {
+              "lower": 67.65968406593407,
+              "upper": 83.53508470695971
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "2d23ea97b1bd265b11807482-target_CAL",
+              "9fc23c7d11b0ef2a2712a81a-target_CAL"
+            ]
+          },
+          "qwen25_72b_int8": {
+            "point": 55.22836538461539,
+            "test_interval": {
+              "lower": 48.974072802197796,
+              "upper": 64.4942622481685
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "46f303f2c638e3222c96a553-target_CAL",
+              "216f75031a658b3fd85a4d76-target_CAL"
+            ]
+          }
+        },
+        "sentiment": {
+          "qwen3_8b_bf16": {
+            "point": 68.57127654246794,
+            "test_interval": {
+              "lower": 64.20285738431491,
+              "upper": 73.87056790865387
+            },
+            "training_SD": 0.8943894520881882,
+            "training_range": [
+              67.28046123798077,
+              69.64518229166666
+            ],
+            "training_seeds": 5,
+            "cell_ids": [
+              "natural-ed697dbeb058c5793a8d3bfa",
+              "natural-5809adc311b0195969e27374",
+              "natural-a396f66f916160abf913b47c",
+              "natural-4b91068083ca3d595ca36eea",
+              "natural-8fa31560324416bed2ef1a45",
+              "natural-fafd1505a39c273babe0b68d",
+              "natural-6882d16cc1be2eef2f992882",
+              "natural-6b8715d00352f920311f4475",
+              "natural-9e5d02d2a6883ca4cf62a059",
+              "natural-d6a4760eaf5873b89903a65b",
+              "natural-71cfc3392d377383318d3ef9",
+              "natural-5a9f6efb4208ce5d900766da",
+              "natural-a4b897825b42f84fc675aae3",
+              "natural-53c3548fd1b1f8b4b6415ef6",
+              "natural-c2360bfb822210b609cf50cd",
+              "natural-8e9ad40eabb53273fe1bead4",
+              "natural-a6c29e434c7d79c3ac8fe675",
+              "natural-ec62769d6aad4a6df6d55516",
+              "natural-9f83dd9bcb2c7698a61ad55f",
+              "natural-f5d2ef36a94a8140d387c644"
+            ]
+          },
+          "qwen3_32b_bf16": {
+            "point": 69.80637770432693,
+            "test_interval": {
+              "lower": 64.33071038661859,
+              "upper": 75.86321708483575
+            },
+            "training_SD": 1.8852738771331212,
+            "training_range": [
+              67.71083733974359,
+              72.36046424278845
+            ],
+            "training_seeds": 5,
+            "cell_ids": [
+              "natural-7d7e660a5f6a41db56758750",
+              "natural-566df9f89a617ceaff94b1f3",
+              "natural-d32ad517e1542f45ac00d5eb",
+              "natural-92db6d470a156d7b9c277593",
+              "natural-f4778fb54d9e09cf30e75312",
+              "natural-35771cd47b6922ba46feaa61",
+              "natural-c7ce829cc1b056a8c2f0b8ae",
+              "natural-41a05fb669f142f46f4f7ed3",
+              "natural-6d84674f2a1992c24fe18418",
+              "natural-4c3e050cffade94ad9ac5dce",
+              "natural-cd4921890f2c034f5f1043b6",
+              "natural-6dadb71e84ad16dd50ae334a",
+              "natural-a1d5edcc9defbb4a7abef060",
+              "natural-e465ee361ada444f97c9c0b6",
+              "natural-9e1dc54ab7e1083c26439071",
+              "natural-d684b3acba76a05c170d4013",
+              "natural-1c9f9ad1e7dd426f4eb86543",
+              "natural-b9c66c434681c4b40953eab7",
+              "natural-56d4ae9b0e21b5742e6094a6",
+              "natural-02fcaf3d993988ecff2a3fe6"
+            ]
+          },
+          "qwen25_72b_int8": {
+            "point": 78.46710987580128,
+            "test_interval": {
+              "lower": 72.15479141626601,
+              "upper": 85.16980293469551
+            },
+            "training_SD": 1.2897408714286165,
+            "training_range": [
+              76.26827924679488,
+              79.65494791666666
+            ],
+            "training_seeds": 5,
+            "cell_ids": [
+              "natural-7a9eae681a8708c537f1d3ff",
+              "natural-8eca49463834a4fa50a7df06",
+              "natural-b54d562e3d0c0c64a85707aa",
+              "natural-9e03a779e6ac992c3e0354ec",
+              "natural-19906477bef6362bdfd6ca29",
+              "natural-4bdb6d9d6d37537e6a4f9e34",
+              "natural-f37a7e09fe0db3f43b74f0fc",
+              "natural-0d468ca0d4615e36e9cf08e2",
+              "natural-b4d4735aa37b320221501316",
+              "natural-1cbb8734f0a96a656b0974fb",
+              "natural-e57c55f25e4deba8e2bd038d",
+              "natural-040ebf2aa97ee580eac71478",
+              "natural-3c6f60a7fc4b5200427a86ab",
+              "natural-7a788a7d30da61bf76f3dbb2",
+              "natural-c0c49cc25e8421cd88f0e258",
+              "natural-e1d3cbde99b8d339b24f57a5",
+              "natural-9c65b9529f1ee2f5f5edba98",
+              "natural-6cc252ac6e8d741e62a4c107",
+              "natural-5c74f2f867f798bca5769e21",
+              "natural-b6470b8d8e0c562b3f83771f"
+            ]
+          }
+        },
+        "entity_boundary": {
+          "qwen3_8b_bf16": {
+            "point": 95.7222282468993,
+            "test_interval": {
+              "lower": 94.18944057358941,
+              "upper": 97.0313576283457
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "d6c1bf470f31fadaa2d0c8ce-target_CAL",
+              "88e7062f759f678e8edef3e0-target_CAL"
+            ]
+          },
+          "qwen3_32b_bf16": {
+            "point": 94.81877771351455,
+            "test_interval": {
+              "lower": 93.01142479596426,
+              "upper": 96.52295332933697
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "496c2ec2ba35cb285c47073c-target_CAL",
+              "da5aa306f3697c5999700710-target_CAL"
+            ]
+          },
+          "qwen25_72b_int8": {
+            "point": 96.32105604556261,
+            "test_interval": {
+              "lower": 94.73147010153589,
+              "upper": 97.76421723378961
+            },
+            "training_SD": null,
+            "training_range": null,
+            "training_seeds": 1,
+            "cell_ids": [
+              "2c88b044ceb6a9ecc48443b8-target_CAL",
+              "f5c9ee1a460184dbb8316dff-target_CAL"
+            ]
+          }
+        }
+      },
+      "composite": {
+        "point": 77.62329376124606,
+        "test_interval": {
+          "lower": 75.18281676146539,
+          "upper": 81.70641570790627
+        }
+      },
+      "complete": true,
+      "reason": null,
+      "training_uncertainty": "No full-benchmark training CI; natural five-resample spread per task only"
+    },
+    {
+      "view": "mixed-original-contract",
+      "model": "olmo2_7b_instruct_bf16",
+      "recipe": "ridge",
+      "fraction": 1.0,
+      "calibration": "target_CAL",
+      "source_pool": [
+        "qwen3_8b_bf16",
+        "qwen3_32b_bf16",
+        "qwen25_72b_int8"
+      ],
+      "panel_id": "original-contract-ecc1a81640970e0b",
+      "pool_scope": "fixed full Qwen reference",
+      "native_tasks": {
+        "subject_routing": {
+          "point": 82.87259615384616,
+          "test_interval": {
+            "lower": 76.09103136446886,
+            "upper": 90.07733802655677
+          },
+          "training_seeds": 1,
+          "training_SD": null,
+          "training_range": null,
+          "cell_ids": [
+            "c21c4a415dd5fe60951f4030-target_CAL",
+            "7ead34b507cafd7c719de339-target_CAL"
+          ]
+        },
+        "sentiment": {
+          "point": 75.47482221554486,
+          "test_interval": {
+            "lower": 69.57826272035257,
+            "upper": 82.15022942958734
+          },
+          "training_seeds": 5,
+          "training_SD": 1.5273817738437327,
+          "training_range": [
+            73.50604717548077,
+            77.36221704727564
+          ],
+          "cell_ids": [
+            "natural-71be539ad082f76b57d01da3",
+            "natural-c0fc3749938dee3f9a410075",
+            "natural-7e4d89a52dabd71f679bebb5",
+            "natural-fcfa8522c8cefa0e429ed8ef",
+            "natural-d9cbe9aaf5df7307484cfab8",
+            "natural-64451c05331f78b8e4d3bec9",
+            "natural-dfa2615b91da6b4886c12e3a",
+            "natural-94cba48582e47ad031c66a0f",
+            "natural-641bde617a6a26fb7fb094c1",
+            "natural-06b3e04fb1911336dfac1a28",
+            "natural-1997c81c64c1e9dbf8151d4a",
+            "natural-4bc1d9af7d45f14c4bb58ee9",
+            "natural-8f53444df425dd5ffdce68db",
+            "natural-5e9081651a6c05fcdb119fc6",
+            "natural-31fe4383de75fa73ab7efc2c",
+            "natural-bd73322ca625300653204507",
+            "natural-e2fcfd12deb4b7d0591dc1b4",
+            "natural-dd1f1e632c882e67f14f527f",
+            "natural-f03edfde8a5a2d97adf611c3",
+            "natural-afad419cb3a121f2a6b82b49"
+          ]
+        },
+        "entity_boundary": {
+          "point": 95.91482964221451,
+          "test_interval": {
+            "lower": 94.45159090384215,
+            "upper": 97.41595167556311
+          },
+          "training_seeds": 1,
+          "training_SD": null,
+          "training_range": null,
+          "cell_ids": [
+            "6c6ce027a4b448bae7e52615-target_CAL",
+            "f18f7d825b3b2942d30db87f-target_CAL"
+          ]
+        }
+      },
+      "native": {
+        "point": 82.52193327619932,
+        "test_interval": {
+          "lower": 79.0528410306114,
+          "upper": 86.48229308968284
+        }
+      },
+      "incoming_tasks": {
+        "subject_routing": {
+          "point": 61.43830128205127,
+          "test_interval": {
+            "lower": 56.88995249542124,
+            "upper": 70.20590086996337
+          }
+        },
+        "sentiment": {
+          "point": 72.28158804086537,
+          "test_interval": {
+            "lower": 67.22546960553552,
+            "upper": 78.25048202123398
+          }
+        },
+        "entity_boundary": {
+          "point": 95.62068733532548,
+          "test_interval": {
+            "lower": 94.1596717655517,
+            "upper": 97.11004032935571
+          }
+        }
+      },
+      "incoming": {
+        "point": 72.61209319623175,
+        "test_interval": {
+          "lower": 70.00226549038612,
+          "upper": 77.27521477450806
+        }
+      },
+      "source_task_values": {
+        "subject_routing": {
+          "qwen3_8b_bf16": {
+            "point": 53.42548076923076,
+            "test_interval": {
+              "lower": 45.61834649725275,
+              "upper": 69.05155391483515
+            },
+            "training_seeds": 1,
+            "training_SD": null,
+            "training_range": null,
+            "cell_ids": [
+              "7c7b172c5452187f6f5903e9-target_CAL",
+              "b0d4b8a3ff866f9a110f5fe4-target_CAL"
+            ]
+          },
+          "qwen3_32b_bf16": {
+            "point": 73.85817307692307,
+            "test_interval": {
+              "lower": 68.44808836996337,
+              "upper": 83.87956444597069
+            },
+            "training_seeds": 1,
+            "training_SD": null,
+            "training_range": null,
+            "cell_ids": [
+              "2d23ea97b1bd265b11807482-target_CAL",
+              "9fc23c7d11b0ef2a2712a81a-target_CAL"
+            ]
+          },
+          "qwen25_72b_int8": {
+            "point": 57.03125,
+            "test_interval": {
+              "lower": 50.65748054029304,
+              "upper": 63.911901900183146
+            },
+            "training_seeds": 1,
+            "training_SD": null,
+            "training_range": null,
+            "cell_ids": [
+              "46f303f2c638e3222c96a553-target_CAL",
+              "216f75031a658b3fd85a4d76-target_CAL"
+            ]
+          }
+        },
+        "sentiment": {
+          "qwen3_8b_bf16": {
+            "point": 68.57127654246794,
+            "test_interval": {
+              "lower": 64.20285738431491,
+              "upper": 73.87056790865387
+            },
+            "training_seeds": 5,
+            "training_SD": 0.8943894520881882,
+            "training_range": [
+              67.28046123798077,
+              69.64518229166666
+            ],
+            "cell_ids": [
+              "natural-ed697dbeb058c5793a8d3bfa",
+              "natural-5809adc311b0195969e27374",
+              "natural-a396f66f916160abf913b47c",
+              "natural-4b91068083ca3d595ca36eea",
+              "natural-8fa31560324416bed2ef1a45",
+              "natural-fafd1505a39c273babe0b68d",
+              "natural-6882d16cc1be2eef2f992882",
+              "natural-6b8715d00352f920311f4475",
+              "natural-9e5d02d2a6883ca4cf62a059",
+              "natural-d6a4760eaf5873b89903a65b",
+              "natural-71cfc3392d377383318d3ef9",
+              "natural-5a9f6efb4208ce5d900766da",
+              "natural-a4b897825b42f84fc675aae3",
+              "natural-53c3548fd1b1f8b4b6415ef6",
+              "natural-c2360bfb822210b609cf50cd",
+              "natural-8e9ad40eabb53273fe1bead4",
+              "natural-a6c29e434c7d79c3ac8fe675",
+              "natural-ec62769d6aad4a6df6d55516",
+              "natural-9f83dd9bcb2c7698a61ad55f",
+              "natural-f5d2ef36a94a8140d387c644"
+            ]
+          },
+          "qwen3_32b_bf16": {
+            "point": 69.80637770432693,
+            "test_interval": {
+              "lower": 64.33071038661859,
+              "upper": 75.86321708483575
+            },
+            "training_seeds": 5,
+            "training_SD": 1.8852738771331212,
+            "training_range": [
+              67.71083733974359,
+              72.36046424278845
+            ],
+            "cell_ids": [
+              "natural-7d7e660a5f6a41db56758750",
+              "natural-566df9f89a617ceaff94b1f3",
+              "natural-d32ad517e1542f45ac00d5eb",
+              "natural-92db6d470a156d7b9c277593",
+              "natural-f4778fb54d9e09cf30e75312",
+              "natural-35771cd47b6922ba46feaa61",
+              "natural-c7ce829cc1b056a8c2f0b8ae",
+              "natural-41a05fb669f142f46f4f7ed3",
+              "natural-6d84674f2a1992c24fe18418",
+              "natural-4c3e050cffade94ad9ac5dce",
+              "natural-cd4921890f2c034f5f1043b6",
+              "natural-6dadb71e84ad16dd50ae334a",
+              "natural-a1d5edcc9defbb4a7abef060",
+              "natural-e465ee361ada444f97c9c0b6",
+              "natural-9e1dc54ab7e1083c26439071",
+              "natural-d684b3acba76a05c170d4013",
+              "natural-1c9f9ad1e7dd426f4eb86543",
+              "natural-b9c66c434681c4b40953eab7",
+              "natural-56d4ae9b0e21b5742e6094a6",
+              "natural-02fcaf3d993988ecff2a3fe6"
+            ]
+          },
+          "qwen25_72b_int8": {
+            "point": 78.46710987580128,
+            "test_interval": {
+              "lower": 72.15479141626601,
+              "upper": 85.16980293469551
+            },
+            "training_seeds": 5,
+            "training_SD": 1.2897408714286165,
+            "training_range": [
+              76.26827924679488,
+              79.65494791666666
+            ],
+            "cell_ids": [
+              "natural-7a9eae681a8708c537f1d3ff",
+              "natural-8eca49463834a4fa50a7df06",
+              "natural-b54d562e3d0c0c64a85707aa",
+              "natural-9e03a779e6ac992c3e0354ec",
+              "natural-19906477bef6362bdfd6ca29",
+              "natural-4bdb6d9d6d37537e6a4f9e34",
+              "natural-f37a7e09fe0db3f43b74f0fc",
+              "natural-0d468ca0d4615e36e9cf08e2",
+              "natural-b4d4735aa37b320221501316",
+              "natural-1cbb8734f0a96a656b0974fb",
+              "natural-e57c55f25e4deba8e2bd038d",
+              "natural-040ebf2aa97ee580eac71478",
+              "natural-3c6f60a7fc4b5200427a86ab",
+              "natural-7a788a7d30da61bf76f3dbb2",
+              "natural-c0c49cc25e8421cd88f0e258",
+              "natural-e1d3cbde99b8d339b24f57a5",
+              "natural-9c65b9529f1ee2f5f5edba98",
+              "natural-6cc252ac6e8d741e62a4c107",
+              "natural-5c74f2f867f798bca5769e21",
+              "natural-b6470b8d8e0c562b3f83771f"
+            ]
+          }
+        },
+        "entity_boundary": {
+          "qwen3_8b_bf16": {
+            "point": 95.7222282468993,
+            "test_interval": {
+              "lower": 94.18944057358941,
+              "upper": 97.0313576283457
+            },
+            "training_seeds": 1,
+            "training_SD": null,
+            "training_range": null,
+            "cell_ids": [
+              "d6c1bf470f31fadaa2d0c8ce-target_CAL",
+              "88e7062f759f678e8edef3e0-target_CAL"
+            ]
+          },
+          "qwen3_32b_bf16": {
+            "point": 94.81877771351455,
+            "test_interval": {
+              "lower": 93.01142479596426,
+              "upper": 96.52295332933697
+            },
+            "training_seeds": 1,
+            "training_SD": null,
+            "training_range": null,
+            "cell_ids": [
+              "496c2ec2ba35cb285c47073c-target_CAL",
+              "da5aa306f3697c5999700710-target_CAL"
+            ]
+          },
+          "qwen25_72b_int8": {
+            "point": 96.32105604556261,
+            "test_interval": {
+              "lower": 94.73147010153589,
+              "upper": 97.76421723378961
+            },
+            "training_seeds": 1,
+            "training_SD": null,
+            "training_range": null,
+            "cell_ids": [
+              "2c88b044ceb6a9ecc48443b8-target_CAL",
+              "f5c9ee1a460184dbb8316dff-target_CAL"
+            ]
+          }
+        }
+      },
+      "composite": {
+        "point": 77.56701323621553,
+        "test_interval": {
+          "lower": 75.05706169083147,
+          "upper": 81.33522361237462
+        }
+      },
+      "complete": true,
+      "reason": null,
+      "training_uncertainty": "No full-benchmark training CI; natural five-resample spread per task only"
+    }
+  ],
+  "scope": "Different views of an opened development bank; only controlled-old to controlled-numeric-only isolates the numerical correction."
+}

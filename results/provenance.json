@@ -1,0 +1,160 @@
+{
+  "schema": "ruxyscore-doc-provenance/4.1",
+  "prepared_on": "2026-10-23",
+  "measured_on": "2026-10-22",
+  "version": "mixed-bank-corrected-original-4.1",
+  "archive": {
+    "bytes": 52873559,
+    "sha256": "5c00f8ad2c275582514f5911e140e46f18a293f4ca57381d949eff6735bdb584",
+    "members": 2320,
+    "source": "llm-gpu/consistent_ranking_v4_2026_10_22/artifacts/ruxybench-v4.1-private.tar.gz",
+    "source_verified": true
+  },
+  "source_receipts": {
+    "CONSISTENT_CONFIG.json": {
+      "bytes": 3409,
+      "sha256": "ed215660b7675dce4e9fce275ecde50565dd07d6c7bcbb3a7f789d7a5c14ad23"
+    },
+    "TASK_REGISTRY.json": {
+      "bytes": 3765912,
+      "sha256": "b46cd6871a0c45452eea266866886ebbb2f13734a40a1ba8ee55ea8a1940986d"
+    },
+    "benchmark/BENCHMARK.json": {
+      "bytes": 37615286,
+      "sha256": "e07b038e47333dd369c40e2da412390128b5de4eba8744e844dc5418378950e0"
+    },
+    "RESULTS.md": {
+      "bytes": 9352,
+      "sha256": "8e11c82692c7c0e45511fd33027f38af9933ad42f6cea6951fdbe9e2d9c30628"
+    },
+    "V4_VERIFICATION.json": {
+      "bytes": 366,
+      "sha256": "9f424e350e23d32c5ee17a9caafef608ab9b9e4c857307bd5717d24e83e1f3ae"
+    },
+    "CONSISTENT_VERIFICATION.json": {
+      "bytes": 329,
+      "sha256": "e72f33ea055a5ebc82cbf2e5be821198394b6a12823895f14ebba1ff7f38113b"
+    },
+    "CACHED_ONBOARDING_PROOF.json": {
+      "bytes": 440,
+      "sha256": "efabbfe62af11fb511b47d3815ad0b5f32b49e464962f419c037caf0c005dc82"
+    },
+    "PORTABLE41_PROOF.json": {
+      "bytes": 490,
+      "sha256": "b6180a352541d8a98ba32a01c42d0eaef65541e41fddd1b1b571da131259728b"
+    },
+    "COMPLETED_REPLAY_PROOF.json": {
+      "bytes": 291,
+      "sha256": "b77c17c933772b2aa9be222fe1f9a1b57a09ac16c6d6dbac80e0434ce85d4412"
+    },
+    "REAL_SATURATION_AND_EXCLUDED_FIXTURES.json": {
+      "bytes": 551,
+      "sha256": "e2b012866af776651665efeeba7f9b471a8bb3b48c37cb2ebc3837b98a757300"
+    }
+  },
+  "recorded_checks": {
+    "V4_VERIFICATION.json": {
+      "passed": true,
+      "controlled_operating_cells_checked": 988,
+      "independent_rank_metrics": "sklearn per-class standardized partialAUC algebraically transformed, both numeric and primary",
+      "profiles_checked": 160,
+      "matrix_rows": 640,
+      "quickjs_states": 52,
+      "graphical_browser_claim": false,
+      "natural_values_preserved": true,
+      "models": 0,
+      "fits": 0
+    },
+    "CONSISTENT_VERIFICATION.json": {
+      "passed": true,
+      "version": "mixed-bank-corrected-original-4.1",
+      "profiles_compared": 40,
+      "independent_aggregation_check": "4.1 minus4.0 equals precisely fixed0.4 subject-contract delta; Sentiment/Entity unchanged",
+      "quickjs_states": 40,
+      "original4_0_artifacts_preserved": true,
+      "new_models": 0,
+      "new_fits": 0
+    },
+    "CACHED_ONBOARDING_PROOF.json": {
+      "passed": true,
+      "version": "mixed-bank-corrected-original-4.1",
+      "real_target": "olmo2_7b_instruct_bf16",
+      "actual_new_process_interrupt75": true,
+      "fresh_resume": true,
+      "old_cell_bytes_preserved": true,
+      "all8profiles_points_and_test_CI_match": true,
+      "fresh_completed_replay": true,
+      "required_task_missing_null": true,
+      "new_models": 0,
+      "new_fits": 0,
+      "new_captures": 0,
+      "independent_external_reproduction": false
+    },
+    "PORTABLE41_PROOF.json": {
+      "passed": true,
+      "installed_from_portable_package": true,
+      "canonical_replay": true,
+      "original4_0_replay": true,
+      "fresh_canonical_derivation_byte_identical": [
+        "BENCHMARK.json",
+        "EXPLORER.html",
+        "PROFILES.png"
+      ],
+      "fresh_cached_target_results_identical": true,
+      "fresh_completed_target_replay": true,
+      "raw_reviews": false,
+      "activation_caches": false,
+      "model_weights": false,
+      "new_models": 0,
+      "new_fits": 0,
+      "independent_external_reproduction": false
+    },
+    "COMPLETED_REPLAY_PROOF.json": {
+      "passed": true,
+      "actual_processes": [
+        {
+          "pid": 10297,
+          "stage": "evaluate",
+          "code": 0
+        },
+        {
+          "pid": 10832,
+          "stage": "replay",
+          "code": 0
+        }
+      ],
+      "model_loads": 0,
+      "new_captures": 0,
+      "new_fits": 0,
+      "original_DONE_unchanged": true
+    },
+    "REAL_SATURATION_AND_EXCLUDED_FIXTURES.json": {
+      "passed": true,
+      "real_72b_self": [
+        {
+          "fraction": 0.5,
+          "old_q": 17.187499999999996,
+          "numeric_q": 100.0,
+          "primary_q": 100.0,
+          "saved_prediction_error": 0.0
+        },
+        {
+          "fraction": 1.0,
+          "old_q": 14.0625,
+          "numeric_q": 100.0,
+          "primary_q": 100.0,
+          "saved_prediction_error": 0.0
+        }
+      ],
+      "ensemble_semantics_fixture": true,
+      "ensemble_saturation_fixture": true,
+      "actual_external_source_performance_claim": false,
+      "excluded_primary_weight": 0,
+      "new_models": 0,
+      "new_fits": 0
+    }
+  },
+  "preparation": "Copy, whitelist, hash, format and link checks only; no scientific recomputation.",
+  "new_model_runs_or_fits": 0,
+  "external_reproduction": false
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "ruxy-consistent-mixed-bank/4",
+  "date": "2026-10-22",
+  "scope": "Opened-bank development benchmark, no fresh confirmation, no utility forecast",
+  "score_version": "mixed-bank-corrected-original-4.1",
+  "primary_recipe": "ridge",
+  "sensitivity": "logistic",
+  "task_weights": {
+    "subject_routing": 0.4,
+    "sentiment": 0.4,
+    "entity_boundary": 0.2
+  },
+  "mix": {
+    "native": 0.5,
+    "incoming": 0.5
+  },
+  "source_order": [
+    "qwen3_8b_bf16",
+    "qwen3_32b_bf16",
+    "qwen25_72b_int8"
+  ],
+  "targets": [
+    "qwen3_8b_bf16",
+    "qwen3_32b_bf16",
+    "qwen25_72b_int8",
+    "olmo2_7b_instruct_bf16"
+  ],
+  "diagnostic_models": [
+    "qwen3_8b_int8"
+  ],
+  "alpha": 0.05,
+  "bootstrap": 500,
+  "controlled": "original authored banks/original single heads/maps; equal two corpora, macroOVR classes",
+  "sentiment": "naturalV2 TRAIN256+SELECT128+CAL128, equal five fixed training resamples and four corpora; original saved decisions/draws; legacy templates separate",
+  "primary_anchor_fraction": 1.0,
+  "anchor_sensitivity": 0.5,
+  "primary_cut": "target_CAL",
+  "other_cut": "source_cut",
+  "missing": "null without renormalization; no self incoming; Qwen LSO descriptive only",
+  "ranking": {
+    "binary_ridge": "positive unbounded linear evidence col1",
+    "binary_logistic": "positive linear logit col0",
+    "multiclass_logistic": "class log-odds zc-logsumexp(other logits), monotone with softmax class probability, robust to saturation",
+    "multiclass_ridge": "log(max(zc,1e-6))-logsumexp(log(max(zothers,1e-6))); legacy semantic contract retained for numeric-only audit",
+    "faithful_multiclass_ridge": "log(max(zc,1e-6))-logsumexp(log(max(zothers,1e-6))); legacy semantic contract retained for numeric-only audit",
+    "support": "excluded0; preserve gated product semantic, audit stable logistic product logit and clipped ridge product; no conversion to ungated task",
+    "raw_multiclass_OVR": "diagnostic fixture only, never silently primary"
+  },
+  "calibration": "All original probabilities/cuts/inequality >= unchanged; zero TEST recalibration",
+  "uncertainty": "500 paired group draws conditional fixed fits; task banks independent draws; natural training spread separate, controlled single-fit not promoted to overall training uncertainty",
+  "panel_version": "qwen-three-reference-task-banks-v4",
+  "task_registry_versions": {
+    "subject_routing": "authored-controlled-native-transfer/1 subject original bank",
+    "sentiment": "sentiment-natural-v2-candidate/1 matched TRAIN256 five resamples",
+    "entity_boundary": "authored-controlled-native-transfer/1 causal word ends"
+  },
+  "canonical_method": "numeric",
+  "relative_link_sensitivity": "mixed-bank-relative-ranking-4.0",
+  "development_amendment": "Post-audit original-confidence-target preservation; not a winner-dependent recipe switch. All earlier4.0 results preserved.",
+  "registered_utc": "2026-10-22T10:50:57.683881+00:00"
+}

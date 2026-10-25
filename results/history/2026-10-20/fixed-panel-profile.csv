@@ -1,0 +1,7 @@
+target,panel,recipe,task,native_points,incoming_full_points
+olmo2_7b_instruct_bf16,qwen-scale-reference-v1-da71e0531312,ridge,subject_routing,82.87259615384616,61.43830128205127
+olmo2_7b_instruct_bf16,qwen-scale-reference-v1-da71e0531312,ridge,sentiment,100.0,100.0
+olmo2_7b_instruct_bf16,qwen-scale-reference-v1-da71e0531312,ridge,entity_boundary,95.91482964221451,95.62068733532548
+olmo2_7b_instruct_bf16,qwen-scale-reference-v1-da71e0531312,logistic,subject_routing,78.23660714285714,61.01381257631258
+olmo2_7b_instruct_bf16,qwen-scale-reference-v1-da71e0531312,logistic,sentiment,100.0,100.0
+olmo2_7b_instruct_bf16,qwen-scale-reference-v1-da71e0531312,logistic,entity_boundary,96.1954164256796,96.09358264785897

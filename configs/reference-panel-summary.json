@@ -1,0 +1,24 @@
+{
+  "schema": "ruxyscore-doc-panel/4.1",
+  "score_version": "mixed-bank-corrected-original-4.1",
+  "panel_version": "qwen-three-reference-task-banks-v4",
+  "executable": false,
+  "sources": [
+    "qwen3_8b_bf16",
+    "qwen3_32b_bf16",
+    "qwen25_72b_int8"
+  ],
+  "source_weight": "equal within each target pool",
+  "full_panel_target": "olmo2_7b_instruct_bf16",
+  "full_panel_id": "original-contract-ecc1a81640970e0b",
+  "other_targets": "Different leave-self-out pools; incoming and composite are descriptive only.",
+  "self_source_allowed": false,
+  "required_task_missing": "null without renormalization",
+  "task_registry_source_version": "mixed-bank-relative-ranking-4.0",
+  "task_registry_note": "Original V4.0 metadata; banks, heads and cohorts are unchanged in V4.1.",
+  "task_registry_receipt": {
+    "bytes": 3765912,
+    "sha256": "b46cd6871a0c45452eea266866886ebbb2f13734a40a1ba8ee55ea8a1940986d"
+  },
+  "registration_scope": "V4.1 is a development amendment after the opened V4.0 audit; no new blinded target run."
+}

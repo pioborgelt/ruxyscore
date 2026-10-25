@@ -1,0 +1,166 @@
+{
+  "schema": "ruxyscore-doc-models/4.1",
+  "models": {
+    "qwen3_8b_bf16": {
+      "repo": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "architecture": "Qwen3ForCausalLM",
+      "model_type": "qwen3",
+      "n_blocks": 36,
+      "width": 4096,
+      "block_path": "model.layers",
+      "final_norm_path": "model.norm",
+      "wrapper": "native_chat",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "chat_template_sha256": "41d5929bf73796beb66809ac700b2cf3ff81694f933e5c14d52b7fd6963c947d",
+      "context_limit": 1536,
+      "batch": 1,
+      "declared_license": "apache-2.0",
+      "precision": "BF16",
+      "compute_dtype": "bfloat16",
+      "activation_storage_dtype": "float32",
+      "attention": "sdpa",
+      "quantization": null,
+      "runtime": {
+        "torch": "2.11.0+cu130",
+        "transformers": "4.57.6",
+        "accelerate": "1.11.0",
+        "bitsandbytes": "0.50.2"
+      },
+      "capture_policy": "strict_prefix_v2: same word/stage token and pooling; prefix-only NER/support before chosenstate for everyprecision, no futuretokens inquantizationbatch; no truncation"
+    },
+    "qwen3_32b_bf16": {
+      "repo": "Qwen/Qwen3-32B",
+      "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+      "architecture": "Qwen3ForCausalLM",
+      "model_type": "qwen3",
+      "n_blocks": 64,
+      "width": 5120,
+      "block_path": "model.layers",
+      "final_norm_path": "model.norm",
+      "wrapper": "native_chat",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "chat_template_sha256": "41d5929bf73796beb66809ac700b2cf3ff81694f933e5c14d52b7fd6963c947d",
+      "context_limit": 1536,
+      "batch": 1,
+      "declared_license": "apache-2.0",
+      "precision": "BF16",
+      "compute_dtype": "bfloat16",
+      "activation_storage_dtype": "float32",
+      "attention": "sdpa",
+      "quantization": null,
+      "runtime": {
+        "torch": "2.11.0+cu130",
+        "transformers": "4.57.6",
+        "accelerate": "1.11.0",
+        "bitsandbytes": "0.50.2"
+      },
+      "capture_policy": "strict_prefix_v2: same word/stage token and pooling; prefix-only NER/support before chosenstate for everyprecision, no futuretokens inquantizationbatch; no truncation"
+    },
+    "qwen25_72b_int8": {
+      "repo": "Qwen/Qwen2.5-72B-Instruct",
+      "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+      "architecture": "Qwen2ForCausalLM",
+      "model_type": "qwen2",
+      "n_blocks": 80,
+      "width": 8192,
+      "block_path": "model.layers",
+      "final_norm_path": "model.norm",
+      "wrapper": "native_chat",
+      "chat_template_kwargs": {},
+      "chat_template_sha256": "2e2d2512cfe46af53dc1eed45368ecaab26ac4461c480e6b69fe571cf0ceaa75",
+      "context_limit": 1536,
+      "batch": 1,
+      "declared_license": "other",
+      "precision": "LLM_INT8_BF16",
+      "compute_dtype": "bfloat16",
+      "activation_storage_dtype": "float32",
+      "attention": "sdpa",
+      "quantization": {
+        "method": "bitsandbytes_LLM.int8",
+        "load_in_8bit": true,
+        "llm_int8_threshold": 6.0,
+        "llm_int8_has_fp16_weight": false,
+        "llm_int8_enable_fp32_cpu_offload": false,
+        "llm_int8_skip_modules": [
+          "lm_head"
+        ],
+        "bitsandbytes_version": "0.50.2"
+      },
+      "runtime": {
+        "torch": "2.11.0+cu130",
+        "transformers": "4.57.6",
+        "accelerate": "1.11.0",
+        "bitsandbytes": "0.50.2"
+      },
+      "capture_policy": "strict_prefix_v2: same word/stage token and pooling; prefix-only NER/support before chosenstate for everyprecision, no futuretokens inquantizationbatch; no truncation"
+    },
+    "olmo2_7b_instruct_bf16": {
+      "repo": "allenai/OLMo-2-1124-7B-Instruct",
+      "revision": "470b1fba1ae01581f270116362ee4aa1b97f4c84",
+      "architecture": "Olmo2ForCausalLM",
+      "model_type": "olmo2",
+      "n_blocks": 32,
+      "width": 4096,
+      "block_path": "model.layers",
+      "final_norm_path": "model.norm",
+      "wrapper": "native_chat",
+      "chat_template_kwargs": {},
+      "chat_template_sha256": "f12865aaf152f6978fe525786d54ab0331a2cf0a6e085dfed8a74299fff2396d",
+      "context_limit": 1536,
+      "batch": 1,
+      "precision": "BF16",
+      "quantization": null,
+      "runtime": {
+        "torch": "2.11.0+cu130",
+        "transformers": "4.57.6",
+        "accelerate": "1.11.0",
+        "bitsandbytes": "0.50.2"
+      }
+    },
+    "qwen3_8b_int8": {
+      "repo": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "architecture": "Qwen3ForCausalLM",
+      "model_type": "qwen3",
+      "n_blocks": 36,
+      "width": 4096,
+      "block_path": "model.layers",
+      "final_norm_path": "model.norm",
+      "wrapper": "native_chat",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "chat_template_sha256": "41d5929bf73796beb66809ac700b2cf3ff81694f933e5c14d52b7fd6963c947d",
+      "context_limit": 1536,
+      "batch": 1,
+      "declared_license": "apache-2.0",
+      "precision": "LLM_INT8_BF16",
+      "compute_dtype": "bfloat16",
+      "activation_storage_dtype": "float32",
+      "attention": "sdpa",
+      "quantization": {
+        "method": "bitsandbytes_LLM.int8",
+        "load_in_8bit": true,
+        "llm_int8_threshold": 6.0,
+        "llm_int8_has_fp16_weight": false,
+        "llm_int8_enable_fp32_cpu_offload": false,
+        "llm_int8_skip_modules": [
+          "lm_head"
+        ],
+        "bitsandbytes_version": "0.50.2"
+      },
+      "runtime": {
+        "torch": "2.11.0+cu130",
+        "transformers": "4.57.6",
+        "accelerate": "1.11.0",
+        "bitsandbytes": "0.50.2"
+      },
+      "capture_policy": "strict_prefix_v2: same word/stage token and pooling; prefix-only NER/support before chosenstate for everyprecision, no futuretokens inquantizationbatch; no truncation"
+    }
+  }
+}

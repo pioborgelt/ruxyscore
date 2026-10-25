@@ -1,0 +1,121 @@
+{
+  "schema": "ruxyscore-doc-models/1",
+  "models": {
+    "qwen3_8b_bf16": {
+      "repo": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "precision": "BF16",
+      "architecture": "Qwen3ForCausalLM",
+      "width": 4096,
+      "n_blocks": 36,
+      "parameter_count": 8190735360,
+      "attention": "sdpa",
+      "runtime": {
+        "torch": "2.11.0+cu130",
+        "transformers": "4.57.6",
+        "accelerate": "1.11.0",
+        "bitsandbytes": "0.50.2"
+      },
+      "capture_context_policy": "strict_prefix_only_v2",
+      "execution_contract": "precision-onboarding-2.0",
+      "context_limit": 1536,
+      "chat_template_sha256": "41d5929bf73796beb66809ac700b2cf3ff81694f933e5c14d52b7fd6963c947d",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "qwen3_32b_bf16": {
+      "repo": "Qwen/Qwen3-32B",
+      "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+      "tokenizer_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+      "precision": "BF16",
+      "architecture": "Qwen3ForCausalLM",
+      "width": 5120,
+      "n_blocks": 64,
+      "parameter_count": 32762123264,
+      "attention": "sdpa",
+      "runtime": {
+        "torch": "2.11.0+cu130",
+        "transformers": "4.57.6",
+        "accelerate": "1.11.0",
+        "bitsandbytes": "0.50.2"
+      },
+      "capture_context_policy": "strict_prefix_only_v2",
+      "execution_contract": "precision-onboarding-2.0",
+      "context_limit": 1536,
+      "chat_template_sha256": "41d5929bf73796beb66809ac700b2cf3ff81694f933e5c14d52b7fd6963c947d",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "qwen25_72b_int8": {
+      "repo": "Qwen/Qwen2.5-72B-Instruct",
+      "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+      "tokenizer_revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+      "precision": "LLM_INT8_BF16",
+      "architecture": "Qwen2ForCausalLM",
+      "width": 8192,
+      "n_blocks": 80,
+      "parameter_count": 72706203648,
+      "attention": "sdpa",
+      "runtime": {
+        "torch": "2.11.0+cu130",
+        "transformers": "4.57.6",
+        "accelerate": "1.11.0",
+        "bitsandbytes": "0.50.2"
+      },
+      "capture_context_policy": "strict_prefix_only_v2",
+      "execution_contract": "precision-onboarding-2.0",
+      "context_limit": 1536,
+      "chat_template_sha256": "2e2d2512cfe46af53dc1eed45368ecaab26ac4461c480e6b69fe571cf0ceaa75",
+      "chat_template_kwargs": {}
+    },
+    "qwen3_8b_int8": {
+      "repo": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "precision": "LLM_INT8_BF16",
+      "architecture": "Qwen3ForCausalLM",
+      "width": 4096,
+      "n_blocks": 36,
+      "parameter_count": 8190735360,
+      "attention": "sdpa",
+      "runtime": {
+        "torch": "2.11.0+cu130",
+        "transformers": "4.57.6",
+        "accelerate": "1.11.0",
+        "bitsandbytes": "0.50.2"
+      },
+      "capture_context_policy": "strict_prefix_only_v2",
+      "execution_contract": "precision-onboarding-2.0",
+      "context_limit": 1536,
+      "chat_template_sha256": "41d5929bf73796beb66809ac700b2cf3ff81694f933e5c14d52b7fd6963c947d",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "olmo2_7b_instruct_bf16": {
+      "repo": "allenai/OLMo-2-1124-7B-Instruct",
+      "revision": "470b1fba1ae01581f270116362ee4aa1b97f4c84",
+      "tokenizer_revision": "470b1fba1ae01581f270116362ee4aa1b97f4c84",
+      "precision": "BF16",
+      "architecture": "Olmo2ForCausalLM",
+      "width": 4096,
+      "n_blocks": 32,
+      "parameter_count": 7298617344,
+      "attention": "sdpa",
+      "runtime": {
+        "torch": "2.11.0+cu130",
+        "transformers": "4.57.6",
+        "accelerate": "1.11.0",
+        "bitsandbytes": "0.50.2"
+      },
+      "capture_context_policy": "strict_prefix_only_v2",
+      "execution_contract": "precision-onboarding-2.0",
+      "context_limit": 1536,
+      "chat_template_sha256": "f12865aaf152f6978fe525786d54ab0331a2cf0a6e085dfed8a74299fff2396d",
+      "chat_template_kwargs": {}
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "version": "mixed-bank-corrected-original-4.1",
+  "original_audit": [
+    {
+      "task": "subject_routing",
+      "recipe": "ridge",
+      "cells": 162,
+      "changed_numeric": 0,
+      "changed_link": 160,
+      "maximum_numeric_delta": 0.0,
+      "maximum_link_delta": 10.388049450549453,
+      "split_tie_cases_numeric": 0,
+      "split_tie_cases_primary": 0,
+      "counts_scope": "cell/class appearances, not independent cases",
+      "semantic_link_change": true
+    },
+    {
+      "task": "subject_routing",
+      "recipe": "logistic",
+      "cells": 162,
+      "changed_numeric": 0,
+      "changed_link": 0,
+      "maximum_numeric_delta": 0.0,
+      "maximum_link_delta": 0.0,
+      "split_tie_cases_numeric": 0,
+      "split_tie_cases_primary": 0,
+      "counts_scope": "cell/class appearances, not independent cases",
+      "semantic_link_change": false
+    },
+    {
+      "task": "sentiment",
+      "recipe": "ridge",
+      "cells": 162,
+      "changed_numeric": 8,
+      "changed_link": 0,
+      "maximum_numeric_delta": 100.0,
+      "maximum_link_delta": 0.0,
+      "split_tie_cases_numeric": 11612,
+      "split_tie_cases_primary": 11612,
+      "counts_scope": "cell/class appearances, not independent cases",
+      "semantic_link_change": false
+    },
+    {
+      "task": "sentiment",
+      "recipe": "logistic",
+      "cells": 162,
+      "changed_numeric": 0,
+      "changed_link": 0,
+      "maximum_numeric_delta": 0.0,
+      "maximum_link_delta": 0.0,
+      "split_tie_cases_numeric": 0,
+      "split_tie_cases_primary": 0,
+      "counts_scope": "cell/class appearances, not independent cases",
+      "semantic_link_change": false
+    },
+    {
+      "task": "entity_boundary",
+      "recipe": "ridge",
+      "cells": 162,
+      "changed_numeric": 0,
+      "changed_link": 0,
+      "maximum_numeric_delta": 2.842170943040401e-14,
+      "maximum_link_delta": 0.0,
+      "split_tie_cases_numeric": 108836,
+      "split_tie_cases_primary": 108836,
+      "counts_scope": "cell/class appearances, not independent cases",
+      "semantic_link_change": false
+    },
+    {
+      "task": "entity_boundary",
+      "recipe": "logistic",
+      "cells": 162,
+      "changed_numeric": 0,
+      "changed_link": 0,
+      "maximum_numeric_delta": 0.0,
+      "maximum_link_delta": 0.0,
+      "split_tie_cases_numeric": 0,
+      "split_tie_cases_primary": 0,
+      "counts_scope": "cell/class appearances, not independent cases",
+      "semantic_link_change": false
+    },
+    {
+      "task": "gated_entity_support",
+      "recipe": "ridge",
+      "cells": 8,
+      "changed_numeric": 0,
+      "changed_link": 0,
+      "maximum_numeric_delta": 0.0,
+      "maximum_link_delta": 0.0,
+      "split_tie_cases_numeric": 0,
+      "split_tie_cases_primary": 0,
+      "counts_scope": "cell/class appearances, not independent cases",
+      "semantic_link_change": false
+    },
+    {
+      "task": "gated_entity_support",
+      "recipe": "logistic",
+      "cells": 8,
+      "changed_numeric": 0,
+      "changed_link": 0,
+      "maximum_numeric_delta": 0.0,
+      "maximum_link_delta": 0.0,
+      "split_tie_cases_numeric": 0,
+      "split_tie_cases_primary": 0,
+      "counts_scope": "cell/class appearances, not independent cases",
+      "semantic_link_change": false
+    }
+  ],
+  "audit_note": "changed_link and primary refer to the retained V4.0 softmax sensitivity, not canonical V4.1.",
+  "secondary": {
+    "version": "mixed-bank-corrected-original-4.1",
+    "unit": "class/cell appearances, not independent texts",
+    "numeric_only": {
+      "entity_boundary/logistic": {
+        "cells": 162,
+        "q_changed": 0,
+        "auroc_class_cells_changed": 0,
+        "ap_class_cells_changed": 0,
+        "max_auroc_delta": 0.0,
+        "max_ap_delta": 0.0
+      },
+      "entity_boundary/ridge": {
+        "cells": 162,
+        "q_changed": 0,
+        "auroc_class_cells_changed": 19,
+        "ap_class_cells_changed": 19,
+        "max_auroc_delta": 0.0014997209821429047,
+        "max_ap_delta": 0.00045391708117259455
+      },
+      "sentiment/logistic": {
+        "cells": 162,
+        "q_changed": 0,
+        "auroc_class_cells_changed": 0,
+        "ap_class_cells_changed": 0,
+        "max_auroc_delta": 0.0,
+        "max_ap_delta": 0.0
+      },
+      "sentiment/ridge": {
+        "cells": 162,
+        "q_changed": 8,
+        "auroc_class_cells_changed": 8,
+        "ap_class_cells_changed": 8,
+        "max_auroc_delta": 0.5,
+        "max_ap_delta": 0.5
+      },
+      "subject_routing/logistic": {
+        "cells": 162,
+        "q_changed": 0,
+        "auroc_class_cells_changed": 0,
+        "ap_class_cells_changed": 0,
+        "max_auroc_delta": 0.0,
+        "max_ap_delta": 0.0
+      },
+      "subject_routing/ridge": {
+        "cells": 162,
+        "q_changed": 0,
+        "auroc_class_cells_changed": 0,
+        "ap_class_cells_changed": 0,
+        "max_auroc_delta": 0.0,
+        "max_ap_delta": 0.0
+      },
+      "gated_entity_support/logistic": {
+        "cells": 8,
+        "q_changed": 0,
+        "auroc_class_cells_changed": 0,
+        "ap_class_cells_changed": 0,
+        "max_auroc_delta": 0.0,
+        "max_ap_delta": 0.0
+      },
+      "gated_entity_support/ridge": {
+        "cells": 8,
+        "q_changed": 0,
+        "auroc_class_cells_changed": 0,
+        "ap_class_cells_changed": 0,
+        "max_auroc_delta": 0.0,
+        "max_ap_delta": 0.0
+      }
+    }
+  },
+  "source_receipts": {
+    "benchmark/BENCHMARK.json": {
+      "bytes": 37615286,
+      "sha256": "e07b038e47333dd369c40e2da412390128b5de4eba8744e844dc5418378950e0"
+    },
+    "SECONDARY_RANK_AUDIT.json": {
+      "bytes": 1853,
+      "sha256": "c6b7cb2db19047539645ee23af7594b03a86153bafa9ae105a2453b2dc5251e4"
+    }
+  }
+}

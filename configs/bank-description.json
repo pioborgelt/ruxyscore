@@ -1,0 +1,377 @@
+{
+  "schema": "ruxyscore-doc-banks/4.1",
+  "score_version": "mixed-bank-corrected-original-4.1",
+  "task_weights": {
+    "subject_routing": 0.4,
+    "sentiment": 0.4,
+    "entity_boundary": 0.2
+  },
+  "task_versions": {
+    "subject_routing": "authored-controlled-native-transfer/1 subject original bank",
+    "sentiment": "sentiment-natural-v2-candidate/1 matched TRAIN256 five resamples",
+    "entity_boundary": "authored-controlled-native-transfer/1 causal word ends"
+  },
+  "controlled": {
+    "subject_routing": {
+      "classes": [
+        "mathematics",
+        "physics",
+        "chemistry",
+        "biology",
+        "computer_science",
+        "engineering",
+        "economics_business",
+        "psychology_social_science"
+      ],
+      "split_counts": {
+        "test_id": {
+          "rows": 128,
+          "groups": 16
+        },
+        "anchor_select": {
+          "rows": 128,
+          "groups": 16
+        },
+        "select": {
+          "rows": 128,
+          "groups": 16
+        },
+        "anchor_fit": {
+          "rows": 128,
+          "groups": 16
+        },
+        "test_ood": {
+          "rows": 128,
+          "groups": 16
+        },
+        "calibrate": {
+          "rows": 128,
+          "groups": 16
+        },
+        "train": {
+          "rows": 256,
+          "groups": 32
+        }
+      },
+      "bank_file": {
+        "bytes": 352027,
+        "sha256": "ef6e35f326019079f7158a13717089e299666a25a0fca7413faeaaa3d4610963"
+      },
+      "exposure": "opened"
+    },
+    "entity_boundary": {
+      "classes": [
+        "not_entity_end",
+        "entity_end"
+      ],
+      "split_counts": {
+        "train": {
+          "rows": 1088,
+          "groups": 64
+        },
+        "test_id": {
+          "rows": 1088,
+          "groups": 64
+        },
+        "anchor_select": {
+          "rows": 544,
+          "groups": 32
+        },
+        "anchor_fit": {
+          "rows": 544,
+          "groups": 32
+        },
+        "test_ood": {
+          "rows": 1408,
+          "groups": 64
+        },
+        "calibrate": {
+          "rows": 1088,
+          "groups": 64
+        },
+        "select": {
+          "rows": 1088,
+          "groups": 64
+        }
+      },
+      "bank_file": {
+        "bytes": 431351,
+        "sha256": "a51c32a573fe4fff5a42816375be353d697dfe98db4282d29fdaaeddbe9d2eb2"
+      },
+      "exposure": "opened"
+    }
+  },
+  "natural_sentiment": {
+    "schema": "sentiment-v2-data-freeze/1",
+    "stats": {
+      "amazon_All_Beauty": {
+        "train_pool": {
+          "rows": 256,
+          "labels": {
+            "0": 128,
+            "1": 128
+          },
+          "negation": 144,
+          "mixed": 16,
+          "indirect_proxy": 86,
+          "groups": 256
+        },
+        "select": {
+          "rows": 64,
+          "labels": {
+            "0": 32,
+            "1": 32
+          },
+          "negation": 39,
+          "mixed": 4,
+          "indirect_proxy": 22,
+          "groups": 64
+        },
+        "calibrate": {
+          "rows": 64,
+          "labels": {
+            "0": 32,
+            "1": 32
+          },
+          "negation": 36,
+          "mixed": 4,
+          "indirect_proxy": 32,
+          "groups": 64
+        },
+        "anchor_fit": {
+          "rows": 128,
+          "labels": {
+            "0": 64,
+            "1": 64
+          },
+          "negation": 71,
+          "mixed": 8,
+          "indirect_proxy": 45,
+          "groups": 128
+        },
+        "anchor_select": {
+          "rows": 64,
+          "labels": {
+            "0": 32,
+            "1": 32
+          },
+          "negation": 31,
+          "mixed": 4,
+          "indirect_proxy": 22,
+          "groups": 64
+        },
+        "development": {
+          "rows": 32,
+          "labels": {
+            "0": 16,
+            "1": 16
+          },
+          "negation": 20,
+          "mixed": 2,
+          "indirect_proxy": 14,
+          "groups": 32
+        },
+        "test_id": {
+          "rows": 256,
+          "labels": {
+            "0": 128,
+            "1": 128
+          },
+          "negation": 157,
+          "mixed": 16,
+          "indirect_proxy": 85,
+          "groups": 256
+        }
+      },
+      "amazon_Musical_Instruments": {
+        "train_pool": {
+          "rows": 256,
+          "labels": {
+            "0": 128,
+            "1": 128
+          },
+          "negation": 158,
+          "mixed": 16,
+          "indirect_proxy": 105,
+          "groups": 256
+        },
+        "select": {
+          "rows": 64,
+          "labels": {
+            "0": 32,
+            "1": 32
+          },
+          "negation": 34,
+          "mixed": 4,
+          "indirect_proxy": 23,
+          "groups": 64
+        },
+        "calibrate": {
+          "rows": 64,
+          "labels": {
+            "0": 32,
+            "1": 32
+          },
+          "negation": 42,
+          "mixed": 4,
+          "indirect_proxy": 23,
+          "groups": 64
+        },
+        "anchor_fit": {
+          "rows": 128,
+          "labels": {
+            "0": 64,
+            "1": 64
+          },
+          "negation": 78,
+          "mixed": 8,
+          "indirect_proxy": 44,
+          "groups": 128
+        },
+        "anchor_select": {
+          "rows": 64,
+          "labels": {
+            "0": 32,
+            "1": 32
+          },
+          "negation": 39,
+          "mixed": 4,
+          "indirect_proxy": 23,
+          "groups": 64
+        },
+        "development": {
+          "rows": 32,
+          "labels": {
+            "0": 16,
+            "1": 16
+          },
+          "negation": 15,
+          "mixed": 2,
+          "indirect_proxy": 11,
+          "groups": 32
+        },
+        "test_id": {
+          "rows": 256,
+          "labels": {
+            "0": 128,
+            "1": 128
+          },
+          "negation": 150,
+          "mixed": 16,
+          "indirect_proxy": 86,
+          "groups": 256
+        }
+      },
+      "amazon_Amazon_Fashion": {
+        "test_ood_amazon": {
+          "rows": 512,
+          "labels": {
+            "0": 256,
+            "1": 256
+          },
+          "negation": 279,
+          "mixed": 32,
+          "indirect_proxy": 218,
+          "groups": 512
+        }
+      },
+      "imdb": {
+        "test_ood_imdb": {
+          "rows": 512,
+          "labels": {
+            "0": 256,
+            "1": 256
+          },
+          "negation": 383,
+          "mixed": 32,
+          "indirect_proxy": 123,
+          "groups": 512
+        }
+      }
+    },
+    "rows": 2752,
+    "source": {
+      "amazon": {
+        "repo": "McAuley-Lab/Amazon-Reviews-2023",
+        "revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+        "files": {
+          "All_Beauty": {
+            "rfilename": "raw/review_categories/All_Beauty.jsonl",
+            "blobId": "6f058eabef845c6da255833bf276a2be2d136bf3",
+            "size": 326611506,
+            "lfs": {
+              "sha256": "36ca7c48440a8247b2dca0174d095238422b506a8a80c114dca722b7715f1c94",
+              "size": 326611506,
+              "pointerSize": 134
+            }
+          },
+          "Amazon_Fashion": {
+            "rfilename": "raw/review_categories/Amazon_Fashion.jsonl",
+            "blobId": "eca8cff7e9cd2ae00efb2909eaa981d784f9bfe3",
+            "size": 1051324731,
+            "lfs": {
+              "sha256": "e597b3ce6cbb2f9994a32e0eee6bb04fdae50725f2d49c89f6baef1a7b986c57",
+              "size": 1051324731,
+              "pointerSize": 135
+            }
+          },
+          "Musical_Instruments": {
+            "rfilename": "raw/review_categories/Musical_Instruments.jsonl",
+            "blobId": "6d0512962af597f9ec36a6e126cb1048360021c9",
+            "size": 1557845107,
+            "lfs": {
+              "sha256": "63aee24d5b9eaf0069cf638703e2d62eb80fde5d2c00ca3d29881d645f6214b3",
+              "size": 1557845107,
+              "pointerSize": 135
+            }
+          }
+        }
+      },
+      "imdb": {
+        "url": "https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz",
+        "revision": "official-v1.0 archive SHA pinned afterdownload, read original movieURLs"
+      }
+    },
+    "imdb_original_archive": {
+      "bytes": 84125825,
+      "sha256": "c40f74a18d3b61f90feba1e17730e0d38e8b97c05fde7008942e91923d1658fe",
+      "md5": "7c2ac02c03563afcf9b574c7e56c153a"
+    },
+    "original_labels_preserved": true,
+    "label_proxy": "origin author overall rating; not new human textgold"
+  },
+  "natural_sampling": {
+    "mixed_marker_fraction": 0.0625,
+    "test_positive_fraction": 0.5,
+    "test_cases": 1536,
+    "train_pool": 512,
+    "main_train_per_fit": 256,
+    "select": 128,
+    "calibration": 128,
+    "fit_anchor_groups_full": 256,
+    "fit_anchor_groups_half": 128,
+    "select_anchor_groups": 128,
+    "training_resamples": 5,
+    "development_cases": 64
+  },
+  "cohort_contracts": {
+    "controlled/entity_boundary/test_id": "8eddfe73c4da23088b1267efed996233946867748f43f1e4b7ab19e8eb8a6a3a",
+    "controlled/entity_boundary/test_ood": "aec7fb2f3d80cf440e35bf516115b935c0b7fa7cb9280a4081f0f3ae3840bd2a",
+    "controlled/sentiment/test_id": "441d100590acdd2e5ab19aa0cedfe2f93dfe98cd0831d60bfada0fa076bd27c3",
+    "controlled/sentiment/test_ood": "589eea999dd11f543085bb533f064b7b5ca9b764502c7466ec549594c18f3412",
+    "controlled/subject_routing/test_id": "9486a6131930fb3f7d2138ea463a327257b7ec2b0b0acc645a3c9eaa67efe8d2",
+    "controlled/subject_routing/test_ood": "a65e45e278ec12cc58054f83de0780dffcf5fc52b54508811db7fc4a25498b1a",
+    "controlled/gated_entity_support/test_id": "e0e713026f2264a1ebf765a53fc785b075c0e9060dc979ad573f895eb9ba50f6",
+    "controlled/gated_entity_support/test_ood": "d25ce4972a9e31faf85bc7a2ed98f0ad788b4fa850b67eff36b520e7e1e39601",
+    "naturalV2/sentiment/amazon_All_Beauty": "1b43ed0f7a9277d4e27b3e027e231303b47d77e1801741cdc8716268fdb9180d",
+    "naturalV2/sentiment/amazon_Amazon_Fashion": "1cd6ce1313c924872102ef19475f95a80ab132538119af4b51d44b6a3befd720",
+    "naturalV2/sentiment/amazon_Musical_Instruments": "7edda405053b7a03aaa745a716a92c2a67632f3bbaf288e548fcca0d7c0a4d37",
+    "naturalV2/sentiment/imdb": "db6bd501f0de76fa17ecc93929ad8ee21a9ee552c7b58835ac8fc9a1cfd3ff7a"
+  },
+  "all_banks_opened": true,
+  "raw_third_party_texts_in_export": false,
+  "natural_freeze_receipt": {
+    "bytes": 10055,
+    "sha256": "5e93d0091a6395e1a25edca5cfc4ba44f3365834a9641809601e7d7040114a64"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "panel_name": "qwen-scale-reference-v1",
+  "registered_utc": "2026-10-20T16:06:11.215157+00:00",
+  "source_order": [
+    "qwen3_8b_bf16",
+    "qwen3_32b_bf16",
+    "qwen25_72b_int8"
+  ],
+  "source_weights": "equal1/3, all3required; missing=null/no renormalization",
+  "profile": "authored-controlled-native-transfer-3.0-no-support",
+  "tasks": [
+    "subject_routing",
+    "sentiment",
+    "entity_boundary"
+  ],
+  "task_weights": {
+    "subject_routing": 0.4,
+    "sentiment": 0.4,
+    "entity_boundary": 0.2
+  },
+  "recipes": [
+    "ridge",
+    "logistic"
+  ],
+  "primary_recipe": "ridge",
+  "source_family_caveat": "Qwen-dominated, not familybalanced: Qwen3-8B BF16 + Qwen3-32B BF16 + Qwen2.5-72B mixedLLM.int8/BF16. No universal transparency/safety claim.",
+  "alpha": 0.05,
+  "depths": [
+    25,
+    50,
+    75,
+    90,
+    100
+  ],
+  "ridge_penalties": [
+    1.0,
+    0.1,
+    0.01,
+    0.001
+  ],
+  "logistic_C": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "anchor_fractions": [
+    0.5,
+    1.0
+  ],
+  "anchor_select": "full unchanged role; half/full applies to AFgroups only",
+  "source_layer_policy": "fixed native TRAIN/SELECT sourcehead layer; targetlayer/penalty on unlabeled ANCHOR_SELECT relative featureMSE only",
+  "map_normalization": "unchanged mean/RMS-L2 anchorfit centering/scales in eachspace; frozen sourcehead preprocessing; noPCA/MATCHA substitution",
+  "selection": "Native TRAIN/SELECT only; Sourceheads frozen. CALcuts only. TEST never selection or recalibration.",
+  "metric": "signed chance-corrected partial ROC FPR<=.05; equal OVR classes and ID/OOD domains; operational counts separate",
+  "bootstrap": {
+    "repetitions": 500,
+    "seed": 191026,
+    "scope": "fixed-head pairedgroups, not training/model-family uncertainty"
+  },
+  "composite": {
+    "native": 0.5,
+    "incoming": 0.5,
+    "version": "fixed-panel-pilot-index/1",
+    "scope": "Source/taskbound experimentalpilot, not numericallycomparable to older50/50pools",
+    "missing_required": "null/incomplete; no zero or renormalization"
+  },
+  "identity_policy": "Reject any target with Source repo+revision, including precisionvariants; no self reward",
+  "exposure": "All corpuscases previouslyopened. Targetnewto currentcontract; not a fresh independentdata confirmation.",
+  "target_results_existing_before_registration": false,
+  "token_rules": {
+    "subject_routing": "native tokenizer/chattemplate; lastprefill before generatedanswer, model-specific tokens",
+    "sentiment": "raw mean nonpadding block outputs, add_special_tokensFalse",
+    "entity_boundary": "native causal strict textprefix at exact measured wordend, lasttoken; no futurecontent"
+  },
+  "schema": "ruxyscore-doc-panel-summary/1",
+  "panel_id": "qwen-scale-reference-v1-da71e0531312",
+  "canonical_sha256": "da71e05313121aa388373ba54be8f831005d058faab7676dc3d62b385abfafbd",
+  "original_file": {
+    "bytes": 188887,
+    "sha256": "2644d325ee5e41392473d35bdf625b275daf4a08eb08d419fffa999e8b8fe99d"
+  },
+  "executable": false,
+  "source_models": {
+    "qwen3_8b_bf16": {
+      "repo": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "precision": "BF16",
+      "architecture": "Qwen3ForCausalLM",
+      "width": 4096,
+      "n_blocks": 36,
+      "parameter_count": 8190735360,
+      "attention": "sdpa",
+      "runtime": {
+        "torch": "2.11.0+cu130",
+        "transformers": "4.57.6",
+        "accelerate": "1.11.0",
+        "bitsandbytes": "0.50.2"
+      },
+      "capture_context_policy": "strict_prefix_only_v2",
+      "execution_contract": "precision-onboarding-2.0",
+      "context_limit": 1536,
+      "chat_template_sha256": "41d5929bf73796beb66809ac700b2cf3ff81694f933e5c14d52b7fd6963c947d",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "qwen3_32b_bf16": {
+      "repo": "Qwen/Qwen3-32B",
+      "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+      "tokenizer_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+      "precision": "BF16",
+      "architecture": "Qwen3ForCausalLM",
+      "width": 5120,
+      "n_blocks": 64,
+      "parameter_count": 32762123264,
+      "attention": "sdpa",
+      "runtime": {
+        "torch": "2.11.0+cu130",
+        "transformers": "4.57.6",
+        "accelerate": "1.11.0",
+        "bitsandbytes": "0.50.2"
+      },
+      "capture_context_policy": "strict_prefix_only_v2",
+      "execution_contract": "precision-onboarding-2.0",
+      "context_limit": 1536,
+      "chat_template_sha256": "41d5929bf73796beb66809ac700b2cf3ff81694f933e5c14d52b7fd6963c947d",
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "qwen25_72b_int8": {
+      "repo": "Qwen/Qwen2.5-72B-Instruct",
+      "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+      "tokenizer_revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+      "precision": "LLM_INT8_BF16",
+      "architecture": "Qwen2ForCausalLM",
+      "width": 8192,
+      "n_blocks": 80,
+      "parameter_count": 72706203648,
+      "attention": "sdpa",
+      "runtime": {
+        "torch": "2.11.0+cu130",
+        "transformers": "4.57.6",
+        "accelerate": "1.11.0",
+        "bitsandbytes": "0.50.2"
+      },
+      "capture_context_policy": "strict_prefix_only_v2",
+      "execution_contract": "precision-onboarding-2.0",
+      "context_limit": 1536,
+      "chat_template_sha256": "2e2d2512cfe46af53dc1eed45368ecaab26ac4461c480e6b69fe571cf0ceaa75",
+      "chat_template_kwargs": {}
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "schema": "ruxyscore-doc-bank/1",
+  "active_tasks": [
+    "subject_routing",
+    "sentiment",
+    "entity_boundary"
+  ],
+  "bank": {
+    "version": "authored-controlled-1.0",
+    "label_origin": "deterministic construction labels, assistant-authored, no human-gold or natural corpus claim",
+    "synthetic": true,
+    "roles": {
+      "subject_routing": {
+        "train": {
+          "text_rows": 256,
+          "groups": 32
+        },
+        "select": {
+          "text_rows": 128,
+          "groups": 16
+        },
+        "calibrate": {
+          "text_rows": 128,
+          "groups": 16
+        },
+        "anchor_fit": {
+          "text_rows": 128,
+          "groups": 16
+        },
+        "anchor_select": {
+          "text_rows": 128,
+          "groups": 16
+        },
+        "test_id": {
+          "text_rows": 128,
+          "groups": 16
+        },
+        "test_ood": {
+          "text_rows": 128,
+          "groups": 16
+        }
+      },
+      "sentiment": {
+        "train": {
+          "text_rows": 256,
+          "groups": 16
+        },
+        "select": {
+          "text_rows": 128,
+          "groups": 8
+        },
+        "calibrate": {
+          "text_rows": 128,
+          "groups": 8
+        },
+        "anchor_fit": {
+          "text_rows": 128,
+          "groups": 8
+        },
+        "anchor_select": {
+          "text_rows": 128,
+          "groups": 8
+        },
+        "test_id": {
+          "text_rows": 128,
+          "groups": 8
+        },
+        "test_ood": {
+          "text_rows": 128,
+          "groups": 8
+        }
+      },
+      "entity_boundary": {
+        "train": {
+          "text_rows": 64,
+          "groups": 64
+        },
+        "select": {
+          "text_rows": 64,
+          "groups": 64
+        },
+        "calibrate": {
+          "text_rows": 64,
+          "groups": 64
+        },
+        "anchor_fit": {
+          "text_rows": 32,
+          "groups": 32
+        },
+        "anchor_select": {
+          "text_rows": 32,
+          "groups": 32
+        },
+        "test_id": {
+          "text_rows": 64,
+          "groups": 64
+        },
+        "test_ood": {
+          "text_rows": 64,
+          "groups": 64
+        }
+      },
+      "gated_entity_support": {
+        "train": {
+          "text_rows": 128,
+          "groups": 64
+        },
+        "select": {
+          "text_rows": 128,
+          "groups": 64
+        },
+        "calibrate": {
+          "text_rows": 128,
+          "groups": 64
+        },
+        "anchor_fit": {
+          "text_rows": 64,
+          "groups": 32
+        },
+        "anchor_select": {
+          "text_rows": 64,
+          "groups": 32
+        },
+        "test_id": {
+          "text_rows": 128,
+          "groups": 64
+        },
+        "test_ood": {
+          "text_rows": 128,
+          "groups": 64
+        }
+      }
+    },
+    "files": {
+      "sentiment.json": {
+        "bytes": 286275,
+        "sha256": "08286d1150bdb0df1d28eba17082ebe5aa610036e3096db3dd0bf222c2ce2894"
+      },
+      "gated_entity_support.json": {
+        "bytes": 409451,
+        "sha256": "2b98fc6bf63042ce08661621dc5946ef675a85715cf1f1b3edf4e930f4384d2f"
+      },
+      "entity_boundary.json": {
+        "bytes": 431351,
+        "sha256": "a51c32a573fe4fff5a42816375be353d697dfe98db4282d29fdaaeddbe9d2eb2"
+      },
+      "subject_routing.json": {
+        "bytes": 352027,
+        "sha256": "ef6e35f326019079f7158a13717089e299666a25a0fca7413faeaaa3d4610963"
+      }
+    },
+    "cohort_hash": "96e929b4128c0f9517812af64bc3f8e2a7c03708a217aa70059d61ce9c087f0b",
+    "generator_sha256": "f7469a2b20d2a9d3541edec643275b33cd07b00a1df80e6d3b51621cd1733b94",
+    "historical_v2_cases_reused": 0,
+    "pretraining_contamination": "new composed strings, no claim to novelty of common phrases or knowledge",
+    "group_limits": "Topic/scenario groups, not independent domain populations. Templates and lexical sentiment cues shared across roles intentionally.",
+    "scientific_scope": "Controlled reference benchmark, not same cohort as V2 and not a natural monitoring population"
+  },
+  "note": "The historical bank manifest also binds the excluded support task. Active score weights are in the panel summary."
+}
